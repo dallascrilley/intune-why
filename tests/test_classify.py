@@ -42,7 +42,7 @@ class JevTests(unittest.TestCase):
         cause, http, _ = self.run_jev(jev_answer("device_configuration", 0.93))
         self.assertEqual(cause["category"], "device_configuration")
         self.assertEqual(cause["decision"]["model"], "jev-test")
-        self.assertEqual(http.requests[0].full_url, "https://api.typesafe.ai/v1/systemone")
+        self.assertEqual(http.requests[0].full_url, "https://openrouter.ai/api/alpha/decisions")
 
     def test_low_confidence_answer_goes_to_review(self):
         cause, _, _ = self.run_jev(jev_answer("user_action", 0.41))

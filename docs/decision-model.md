@@ -1,6 +1,6 @@
 # Decision model: how intune-why classifies settings
 
-Measured 27 October 2026 against `jev-1.14.0` through TypeSafe's System One API.
+Measured 27 October 2026 against `jev-1.14.0` through TypeSafe's direct System One API. The tool now calls the same release, `typesafe/jev-1.14`, through OpenRouter's Decisions API so that users need only an OpenRouter key; rerun `scripts/shadow_jev.py` to measure that route on your account.
 
 ## What is decided
 

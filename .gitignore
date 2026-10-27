@@ -13,3 +13,5 @@ intune-why-*.html
 # Published assets (override global ignores)
 !docs/demo.gif
 !docs/evidence/*.jsonl
+/site/
+.wrangler/

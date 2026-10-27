@@ -93,7 +93,7 @@ def _report_options(p):
     p.add_argument("--csv", metavar="FILE", help="write every affected device with its root cause")
     p.add_argument("--stale-days", type=int, default=30, help="days without sync before a device counts as stale (default 30)")
     p.add_argument("--decide", choices=("rules", "jev"), default="rules",
-                   help="classify unknown settings with built-in rules only, or ask Jev (needs TYPESAFE_API_KEY)")
+                   help="classify unknown settings with built-in rules only, or ask Jev (needs OPENROUTER_API_KEY)")
     p.add_argument("--redact", action="store_true", help="replace device and user names with pseudonyms for sharing")
 
 

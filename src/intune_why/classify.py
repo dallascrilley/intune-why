@@ -2,9 +2,9 @@
 
 Built-in rules cover the standard Intune compliance settings. Anything else,
 such as custom compliance settings with arbitrary names, can go to Jev, a typed
-decision model from TypeSafe. Jev receives only the setting identifier,
-platforms, state counts and the share of devices that stopped syncing. It never
-receives device names, user names or error text.
+decision model from TypeSafe, through OpenRouter's Decisions API. Jev receives
+only the setting identifier, platforms, state counts and the share of devices
+that stopped syncing. It never receives device names, user names or error text.
 """
 
 import json
@@ -13,56 +13,13 @@ import re
 import time
 import urllib.error
 import urllib.request
+from pathlib import Path
 
-CATEGORIES = {
-    "device_configuration": {
-        "label": "Configure devices",
-        "next": "Deploy or repair the configuration profile or security feature this setting checks, then confirm on one affected device before rolling out.",
-    },
-    "user_action": {
-        "label": "Ask users",
-        "next": "Tell the affected users what to change, or enforce it with an update ring or policy, and set a deadline that matches the grace period.",
-    },
-    "policy_assignment": {
-        "label": "Fix policy",
-        "next": "Check which compliance policies target these devices and resolve missing assignments or conflicting settings.",
-    },
-    "stale_or_orphaned": {
-        "label": "Clean up devices",
-        "next": "Confirm the devices are no longer in use, then retire them or reconnect their owners. These devices will not report a fix until they check in.",
-    },
-    "security_investigation": {
-        "label": "Investigate risk",
-        "next": "Send these devices to whoever owns endpoint security; the setting reports a risk signal rather than a configuration gap.",
-    },
-    "other": {
-        "label": "Review",
-        "next": "Read the setting definition in the compliance policy and decide who owns the fix.",
-    },
-}
-
+_RULES_FILE = Path(__file__).with_name("data") / "rules.json"
+_SHARED = json.loads(_RULES_FILE.read_text(encoding="utf-8"))  # also used by the web demo
+CATEGORIES = _SHARED["categories"]
 # (pattern over "setting settingName", category, title). First match wins.
-RULES = [
-    (r"requireremaincontact|isactive", "stale_or_orphaned", "Device stopped checking in"),
-    (r"requireuserexistence|userexist", "stale_or_orphaned", "Enrolled user no longer exists"),
-    (r"requiredevicecompliancepolicyassigned|policyassigned", "policy_assignment", "No compliance policy assigned"),
-    (r"bitlocker", "device_configuration", "BitLocker not enabled"),
-    (r"filevault", "device_configuration", "FileVault not enabled"),
-    (r"storagerequireencryption|requireencryption", "device_configuration", "Disk encryption not enabled"),
-    (r"secureboot", "device_configuration", "Secure Boot not enabled"),
-    (r"codeintegrity", "device_configuration", "Code integrity not enabled"),
-    (r"\btpm|tpmrequired", "device_configuration", "TPM not present or ready"),
-    (r"firewall", "device_configuration", "Firewall not enabled"),
-    (r"antivirus|antispyware|defender|signatureoutofdate|rtpenabled", "device_configuration", "Antivirus not healthy"),
-    (r"threatprotection|threatlevel|securitylevel", "security_investigation", "Threat level above allowed"),
-    (r"jailbr|rooted|securityblockjailbroken", "security_investigation", "Jailbroken or rooted device"),
-    (r"securitypatch", "user_action", "Security patch level too old"),
-    (r"osminimum|minimumbuild|minimumversion|minandroid|osversion", "user_action", "OS below minimum version"),
-    (r"osmaximum|maximumversion", "user_action", "OS above maximum version"),
-    # Anchored to standard password settings so custom names like BiosPasswordSet fall through.
-    (r"(passcode|password)(required|minimum|expiration|minutes|previous|block|complex|type|length)",
-     "user_action", "Passcode requirement not met"),
-]
+RULES = [(r["pattern"], r["category"], r["title"]) for r in _SHARED["rules"]]
 
 
 def rule_for(cause):
@@ -73,42 +30,12 @@ def rule_for(cause):
     return None
 
 
-JEV_URL = "https://api.typesafe.ai/v1/systemone"
-# Pinned to the version measured in docs/decision-model.md; override to test another.
-JEV_MODEL = os.environ.get("INTUNE_WHY_JEV_MODEL", "jev-1.14.0")
-CONFIDENCE_FLOOR = 0.6
+JEV_URL = "https://openrouter.ai/api/alpha/decisions"
+# Pinned to the release measured in docs/decision-model.md; override to test another.
+JEV_MODEL = os.environ.get("INTUNE_WHY_JEV_MODEL", "typesafe/jev-1.14")
+CONFIDENCE_FLOOR = _SHARED["confidence_floor"]
 
-JEV_QUESTION = {
-    "type": "choice",
-    "instructions": (
-        "`cause` describes one Microsoft Intune compliance setting that is failing on managed devices. "
-        "`cause.setting` is the setting identifier; custom compliance settings can have any name. "
-        "Which remediation path usually resolves this setting?"
-    ),
-    "criteria": {
-        "device_configuration": {
-            "what": "An admin deploys or repairs device configuration or a security feature",
-            "examples": ["disk encryption off", "firewall disabled", "required VPN client missing", "Secure Boot off"],
-        },
-        "user_action": {
-            "what": "The device user must act on the device",
-            "examples": ["install an OS update", "set a passcode", "restart to finish an update"],
-        },
-        "policy_assignment": {
-            "what": "The compliance policy itself is missing, mis-targeted or conflicting",
-            "examples": ["no compliance policy assigned", "two policies conflict"],
-        },
-        "stale_or_orphaned": {
-            "what": "The device stopped checking in or its user no longer exists",
-            "not_for": "Devices that report in normally but fail a setting",
-        },
-        "security_investigation": {
-            "what": "The setting reports a security risk signal that needs investigation",
-            "examples": ["threat level too high", "jailbroken device", "unexpected local administrators"],
-        },
-        "other": None,
-    },
-}
+JEV_QUESTION = _SHARED["jev_question"]
 
 
 class _NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -117,11 +44,11 @@ class _NoRedirect(urllib.request.HTTPRedirectHandler):
 
 
 class JevClient:
-    """Minimal client for TypeSafe's System One endpoint (stdlib only)."""
+    """Minimal client for OpenRouter's Decisions API (stdlib only)."""
 
     def __init__(self, api_key, model=JEV_MODEL, timeout=8.0, opener=None, sleep=time.sleep):
         if not api_key:
-            raise ValueError("TYPESAFE_API_KEY is not set")
+            raise ValueError("OPENROUTER_API_KEY is not set")
         self._key = api_key
         self.model = model
         self.timeout = timeout
@@ -133,16 +60,19 @@ class JevClient:
         for attempt in range(attempts):
             req = urllib.request.Request(
                 JEV_URL, data=body, method="POST",
-                headers={"Authorization": "Bearer " + self._key, "Content-Type": "application/json"},
+                headers={"Authorization": "Bearer " + self._key, "Content-Type": "application/json",
+                         "HTTP-Referer": "https://github.com/dallascrilley/intune-why", "X-Title": "intune-why"},
             )
             try:
                 with self._open(req, timeout=self.timeout) as resp:
                     return json.load(resp)
             except urllib.error.HTTPError as exc:
-                if exc.code in (429, 529) and attempt + 1 < attempts:
+                if exc.code in (429, 502, 503, 529) and attempt + 1 < attempts:
                     self._sleep(min(float(exc.headers.get("retry-after") or 2 ** attempt), 10.0))
                     continue
-                raise RuntimeError("Jev request failed with HTTP %d" % exc.code) from None
+                hint = {401: "check OPENROUTER_API_KEY", 402: "add OpenRouter credits",
+                        404: "the model may be blocked by your OpenRouter guardrails"}.get(exc.code)
+                raise RuntimeError("Jev request failed with HTTP %d%s" % (exc.code, "; " + hint if hint else "")) from None
             except (urllib.error.URLError, OSError) as exc:
                 if attempt + 1 < attempts:
                     self._sleep(2 ** attempt)
@@ -185,7 +115,7 @@ def classify(report, decider="rules", client=None, warn=None):
     if decider == "jev" and os.environ.get("INTUNE_WHY_DISABLE_JEV") == "1":
         decider = "rules"
     if decider == "jev" and client is None:
-        client = JevClient(os.environ.get("TYPESAFE_API_KEY", ""))
+        client = JevClient(os.environ.get("OPENROUTER_API_KEY", ""))
     for cause in report["causes"]:
         rule = rule_for(cause)
         if rule:

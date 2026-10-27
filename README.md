@@ -6,6 +6,8 @@ Intune tells you that 123 devices are noncompliant. It does not tell you that fi
 
 ![Simulating the top three fixes raises compliance from 62% to 86%, then the evidence for a custom setting shows how Jev classified it](docs/demo.gif)
 
+**[Try the live demo](https://intune-why.dallascrilley.com)** with a sample tenant, or drop in your own snapshot. It runs in your browser.
+
 ```sh
 pipx install git+https://github.com/dallascrilley/intune-why
 intune-why demo            # opens the report for a fictional 320-device tenant
@@ -35,6 +37,12 @@ intune-why  320 devices  62% compliant  123 need attention
   6  Approved Vpn Client Installed                 5       5              91%  Configure devices (jev 0.95)
 ```
 
+## Bring your own data, keep it on your machine
+
+The [web demo](https://intune-why.dallascrilley.com) accepts the `intune-snapshot.json` that `intune-why collect` writes. It parses and analyzes the file in your browser tab; the page shows the number of network requests made while analyzing, and it is zero. The analysis in the browser is a JavaScript port of the Python package, and CI requires both to produce the same report.
+
+To classify custom settings there, paste an OpenRouter key. It is held in memory (or session storage if you choose) and sent only to openrouter.ai, with the setting names and counts. Device and user names never leave the tab.
+
 ## Run it on your tenant
 
 ```sh
@@ -61,18 +69,18 @@ intune-why analyze intune-snapshot.json --stale-days 45 --csv devices.csv --reda
 
 ## Classifying custom settings with Jev
 
-Standard compliance settings map cleanly to a remediation path. Custom compliance settings, such as `CustomCompliance.ApprovedVpnClientInstalled`, do not. For those, intune-why can ask [Jev](https://docs.typesafe.ai), a typed decision model from TypeSafe. It returns one of a fixed set of options with a probability for each, so it cannot invent a category.
+Standard compliance settings map cleanly to a remediation path. Custom compliance settings, such as `CustomCompliance.ApprovedVpnClientInstalled`, do not. For those, intune-why can ask [Jev](https://docs.typesafe.ai), a typed decision model from TypeSafe, through [OpenRouter](https://openrouter.ai). It returns one of a fixed set of options with a probability for each, so it cannot invent a category. A call costs a small fraction of a cent.
 
 ```sh
-export TYPESAFE_API_KEY=...
+export OPENROUTER_API_KEY=...
 intune-why collect --tenant contoso.onmicrosoft.com --decide jev --html report.html
 ```
 
 - **Rules run first.** Jev only sees settings that no rule matches.
 - **Only the setting is sent:** its identifier, platforms, state counts and the share of devices that stopped syncing. Device names, user names and error text never leave your machine.
 - **Low confidence goes to review.** Answers below 0.60 confidence are marked *Review*, with Jev's proposal shown alongside.
-- **Measured before shipping.** In a shadow run against 40 labeled settings, every answer at or above 0.60 matched the label (33 of 33), and every disagreement fell below the floor. See [docs/decision-model.md](docs/decision-model.md) for the method, the misses and the limits.
-- The model version is pinned (`jev-1.14.0`); set `INTUNE_WHY_JEV_MODEL` to try another and `INTUNE_WHY_DISABLE_JEV=1` to switch it off.
+- **Measured before shipping.** In a shadow run against 40 labeled settings, every answer at or above 0.60 matched the label (33 of 33), and every disagreement fell below the floor. See [docs/decision-model.md](docs/decision-model.md) for the method, the misses and the limits, and [docs/how-it-works.md](docs/how-it-works.md) for a tour of the code.
+- The model version is pinned (`typesafe/jev-1.14`); set `INTUNE_WHY_JEV_MODEL` to try another and `INTUNE_WHY_DISABLE_JEV=1` to switch it off. If OpenRouter returns 404, allow the TypeSafe provider in your account's guardrails.
 
 Without a key, custom settings appear as *Review* and everything else works the same.
 
@@ -89,7 +97,7 @@ Version 0.1. The analysis, report and Graph client are covered by tests built on
 ```sh
 script/cibuild                           # the full CI gate: install, test, run the installed demo
 python scripts/make_demo.py              # regenerate the fictional tenant
-python scripts/shadow_jev.py out.jsonl   # re-measure Jev (needs TYPESAFE_API_KEY)
+python scripts/shadow_jev.py out.jsonl   # re-measure Jev (needs OPENROUTER_API_KEY)
 ```
 
 CI runs `script/cibuild` on [Depot CI](https://depot.dev) for every code change that lands on `main`, on Python 3.9 and 3.13.

@@ -1,0 +1,159 @@
+{
+ "categories": {
+  "device_configuration": {
+   "label": "Configure devices",
+   "next": "Deploy or repair the configuration profile or security feature this setting checks, then confirm on one affected device before rolling out."
+  },
+  "user_action": {
+   "label": "Ask users",
+   "next": "Tell the affected users what to change, or enforce it with an update ring or policy, and set a deadline that matches the grace period."
+  },
+  "policy_assignment": {
+   "label": "Fix policy",
+   "next": "Check which compliance policies target these devices and resolve missing assignments or conflicting settings."
+  },
+  "stale_or_orphaned": {
+   "label": "Clean up devices",
+   "next": "Confirm the devices are no longer in use, then retire them or reconnect their owners. These devices will not report a fix until they check in."
+  },
+  "security_investigation": {
+   "label": "Investigate risk",
+   "next": "Send these devices to whoever owns endpoint security; the setting reports a risk signal rather than a configuration gap."
+  },
+  "other": {
+   "label": "Review",
+   "next": "Read the setting definition in the compliance policy and decide who owns the fix."
+  }
+ },
+ "rules": [
+  {
+   "pattern": "requireremaincontact|isactive",
+   "category": "stale_or_orphaned",
+   "title": "Device stopped checking in"
+  },
+  {
+   "pattern": "requireuserexistence|userexist",
+   "category": "stale_or_orphaned",
+   "title": "Enrolled user no longer exists"
+  },
+  {
+   "pattern": "requiredevicecompliancepolicyassigned|policyassigned",
+   "category": "policy_assignment",
+   "title": "No compliance policy assigned"
+  },
+  {
+   "pattern": "bitlocker",
+   "category": "device_configuration",
+   "title": "BitLocker not enabled"
+  },
+  {
+   "pattern": "filevault",
+   "category": "device_configuration",
+   "title": "FileVault not enabled"
+  },
+  {
+   "pattern": "storagerequireencryption|requireencryption",
+   "category": "device_configuration",
+   "title": "Disk encryption not enabled"
+  },
+  {
+   "pattern": "secureboot",
+   "category": "device_configuration",
+   "title": "Secure Boot not enabled"
+  },
+  {
+   "pattern": "codeintegrity",
+   "category": "device_configuration",
+   "title": "Code integrity not enabled"
+  },
+  {
+   "pattern": "\\btpm|tpmrequired",
+   "category": "device_configuration",
+   "title": "TPM not present or ready"
+  },
+  {
+   "pattern": "firewall",
+   "category": "device_configuration",
+   "title": "Firewall not enabled"
+  },
+  {
+   "pattern": "antivirus|antispyware|defender|signatureoutofdate|rtpenabled",
+   "category": "device_configuration",
+   "title": "Antivirus not healthy"
+  },
+  {
+   "pattern": "threatprotection|threatlevel|securitylevel",
+   "category": "security_investigation",
+   "title": "Threat level above allowed"
+  },
+  {
+   "pattern": "jailbr|rooted|securityblockjailbroken",
+   "category": "security_investigation",
+   "title": "Jailbroken or rooted device"
+  },
+  {
+   "pattern": "securitypatch",
+   "category": "user_action",
+   "title": "Security patch level too old"
+  },
+  {
+   "pattern": "osminimum|minimumbuild|minimumversion|minandroid|osversion",
+   "category": "user_action",
+   "title": "OS below minimum version"
+  },
+  {
+   "pattern": "osmaximum|maximumversion",
+   "category": "user_action",
+   "title": "OS above maximum version"
+  },
+  {
+   "pattern": "(passcode|password)(required|minimum|expiration|minutes|previous|block|complex|type|length)",
+   "category": "user_action",
+   "title": "Passcode requirement not met"
+  }
+ ],
+ "confidence_floor": 0.6,
+ "jev_question": {
+  "type": "choice",
+  "instructions": "`cause` describes one Microsoft Intune compliance setting that is failing on managed devices. `cause.setting` is the setting identifier; custom compliance settings can have any name. Which remediation path usually resolves this setting?",
+  "criteria": {
+   "device_configuration": {
+    "what": "An admin deploys or repairs device configuration or a security feature",
+    "examples": [
+     "disk encryption off",
+     "firewall disabled",
+     "required VPN client missing",
+     "Secure Boot off"
+    ]
+   },
+   "user_action": {
+    "what": "The device user must act on the device",
+    "examples": [
+     "install an OS update",
+     "set a passcode",
+     "restart to finish an update"
+    ]
+   },
+   "policy_assignment": {
+    "what": "The compliance policy itself is missing, mis-targeted or conflicting",
+    "examples": [
+     "no compliance policy assigned",
+     "two policies conflict"
+    ]
+   },
+   "stale_or_orphaned": {
+    "what": "The device stopped checking in or its user no longer exists",
+    "not_for": "Devices that report in normally but fail a setting"
+   },
+   "security_investigation": {
+    "what": "The setting reports a security risk signal that needs investigation",
+    "examples": [
+     "threat level too high",
+     "jailbroken device",
+     "unexpected local administrators"
+    ]
+   },
+   "other": null
+  }
+ }
+}

@@ -1,0 +1,9 @@
+{
+  // Static demo on Cloudflare Workers. script/build-web assembles ./site first.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "intune-why",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "./site", "not_found_handling": "404-page" },
+  "routes": [{ "pattern": "intune-why.dallascrilley.com", "custom_domain": true }],
+  "workers_dev": true
+}

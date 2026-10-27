@@ -4,7 +4,7 @@
 Labels are the maintainer's judgment of the usual remediation path. Every
 setting gets the same neutral counts (share_not_recently_synced 0.1), so Jev
 judges from the setting identifier alone. Writes one JSONL record per call and
-prints a Markdown summary. Needs TYPESAFE_API_KEY.
+prints a Markdown summary. Needs OPENROUTER_API_KEY.
 """
 
 import json
@@ -69,7 +69,7 @@ def platform(setting):
 
 def main():
     out = Path(sys.argv[1] if len(sys.argv) > 1 else "shadow-run.jsonl")
-    client = JevClient(os.environ.get("TYPESAFE_API_KEY", ""), model=os.environ.get("INTUNE_WHY_JEV_MODEL", "jev-1.14.0"))
+    client = JevClient(os.environ.get("OPENROUTER_API_KEY", ""))
     rows = []
     with out.open("w", encoding="utf-8") as log:
         for setting, label in LABELS:

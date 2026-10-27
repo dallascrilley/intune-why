@@ -1,0 +1,12 @@
+#!/bin/sh
+# Assemble the static demo in ./site from web/ and the package's shared data.
+set -eu
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+SITE="$ROOT/site"
+mkdir -p "$SITE/vendor"
+cp "$ROOT"/web/index.html "$ROOT"/web/app.js "$ROOT"/web/core.js "$ROOT"/web/_headers "$SITE/"
+cp "$ROOT"/web/vendor/byo-kit.js "$SITE/vendor/"
+cp "$ROOT"/src/intune_why/templates/report.html "$ROOT"/src/intune_why/data/rules.json "$ROOT"/src/intune_why/data/demo_snapshot.json "$SITE/"
+[ -f "$ROOT/docs/og.png" ] && cp "$ROOT/docs/og.png" "$SITE/"
+printf '<!doctype html><title>Not found</title><p>Not found. <a href="/">Back to intune-why</a></p>\n' > "$SITE/404.html"
+echo "built $SITE"
