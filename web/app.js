@@ -15,7 +15,7 @@ export const openrouter = {
   auth: { header: "authorization", prefix: "Bearer " },
   headers: {},
   testPath: "/api/v1/key",
-  note: "Calls go from this tab to openrouter.ai. Use a key with a small credit limit you can revoke.",
+  note: "Use a key with a small credit limit you can revoke.",
 };
 
 const $ = (id) => document.getElementById(id);

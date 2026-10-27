@@ -54,14 +54,14 @@ function downloadText(filename, text, type = 'text/csv;charset=utf-8') {
 // ---- src/dom/styles.js
 // Theme with CSS custom properties (--byo-*) or with ::part().
 // Parts: box, dropzone, button, primary, input, textarea, label, link,
-//        privacy, status, errors, route, choice
+//        hint, privacy, status, errors, route, choice
 
 const BASE_CSS = `
 :host{
   display:block;
-  --byo-bg:#ffffff;--byo-soft:#f6f8fb;--byo-ink:#17212c;--byo-muted:#5a6a7e;--byo-line:#d9e0ea;
+  --byo-bg:#ffffff;--byo-soft:#f6f8fb;--byo-ink:#17212c;--byo-muted:#526175;--byo-line:#d9e0ea;
   --byo-accent:#2457d6;--byo-accent-soft:#e8eefc;--byo-on-accent:#ffffff;
-  --byo-good:#1d8a66;--byo-good-soft:#e5f4ee;--byo-warn:#8a5410;--byo-warn-soft:#fdf3e3;
+  --byo-good:#17745a;--byo-good-soft:#e5f4ee;--byo-warn:#8a5410;--byo-warn-soft:#fdf3e3;
   --byo-danger:#b42318;--byo-danger-soft:#fdecea;
   --byo-radius:14px;
   --byo-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;
@@ -75,7 +75,7 @@ const BASE_CSS = `
   --byo-danger:#ff8b7f;--byo-danger-soft:#3a1a17;
 }}
 *{box-sizing:border-box}
-.box{background:var(--byo-bg);border:1px solid var(--byo-line);border-radius:var(--byo-radius);padding:18px}
+.box{background:var(--byo-bg);border:1px solid var(--byo-line);border-radius:var(--byo-radius);padding:14px 16px}
 .eyebrow{font-size:10.5px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;color:var(--byo-muted);margin:0 0 8px}
 .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .grow{flex:1 1 220px;min-width:0}
@@ -90,9 +90,9 @@ textarea{font-family:var(--byo-mono);font-size:12.5px;resize:vertical;min-height
 label,legend{font-weight:700;font-size:13px}
 a{color:var(--byo-accent);font-weight:650}
 :focus-visible{outline:2px solid var(--byo-accent);outline-offset:2px}
-.privacy{display:flex;gap:8px;align-items:center;margin:12px 0 0;color:var(--byo-muted);font-size:12.5px}
+.privacy{display:flex;gap:8px;align-items:center;margin:10px 0 0;color:var(--byo-muted);font-size:12.5px}
 .privacy::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--byo-good);flex:none}
-.status{margin:10px 0 0;font-size:12.5px;color:var(--byo-muted);min-height:1.45em}
+.status{margin:6px 0 0;font-size:12.5px;color:var(--byo-muted);min-height:1.45em}
 .status[data-tone=good]{color:var(--byo-good)}
 .status[data-tone=warn]{color:var(--byo-warn)}
 .status[data-tone=bad]{color:var(--byo-danger)}
@@ -102,27 +102,32 @@ a{color:var(--byo-accent);font-weight:650}
 `;
 
 const DATA_CSS = `
-.dz{border:1.5px dashed var(--byo-line);border-radius:12px;padding:20px;text-align:center;background:var(--byo-soft);transition:border-color .2s,background .2s}
+.dz{border:1.5px dashed var(--byo-line);border-radius:12px;padding:14px;text-align:center;background:var(--byo-soft);transition:border-color .2s,background .2s}
 :host([dragging]) .dz{border-color:var(--byo-accent);background:var(--byo-accent-soft)}
 .dz strong{display:block;font-size:15px;letter-spacing:-.2px}
-.dz .row{justify-content:center;margin-top:12px}
-.paste{margin-top:14px}
-.paste label{display:block;margin-bottom:6px}
-.paste .row{margin-top:8px}
+.dz .hint{display:block;margin-top:2px;color:var(--byo-muted);font-size:12px}
+.dz .hint[hidden]{display:none}
+.dz .row{justify-content:center;margin-top:10px}
+.paste[hidden]{display:none}
+.paste{margin-top:10px}
+.paste label{display:block;margin-bottom:4px}
+.pr{display:flex;gap:8px;align-items:flex-end}
+.pr textarea{flex:1 1 auto;min-width:0}
+.pr button{flex:none;white-space:nowrap}
 `;
 
 const KEY_CSS = `
-.head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:8px}
+.head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:6px}
 .field{position:relative}
 .field .row{flex-wrap:nowrap}
-fieldset{border:0;margin:14px 0 0;padding:0}
-legend{padding:0;margin-bottom:6px;color:var(--byo-muted);font-size:12.5px}
-.choice{display:flex;gap:6px;align-items:center;font-weight:500;font-size:13px;margin:3px 0}
+.keep{display:flex;flex-wrap:wrap;gap:2px 14px;align-items:center;margin-top:10px}
+.keep .lead{color:var(--byo-muted);font-size:12.5px;font-weight:700}
+.choice{display:flex;gap:6px;align-items:center;font-weight:500;font-size:13px;margin:2px 0}
 .choice input{accent-color:var(--byo-accent);margin:0}
-.route{margin:14px 0 0;padding:11px 13px;border-radius:10px;background:var(--byo-accent-soft);font-size:12.5px}
+.route{margin:10px 0 0;padding:9px 12px;border-radius:10px;background:var(--byo-accent-soft);font-size:12.5px}
 .route code{font-family:var(--byo-mono);font-size:12px}
-.note{display:block;margin-top:6px;color:var(--byo-muted)}
-.actions{margin-top:12px}
+.note{display:block;margin-top:4px;color:var(--byo-muted)}
+.actions{margin-top:8px}
 `;
 
 // ---- src/core/parse.js
@@ -379,8 +384,19 @@ async function countNetworkCalls(fn, env = globalThis) {
 
 // ---- src/elements/byo-data.js
 const PRIVACY_LINE = 'Processed in your browser. Nothing is uploaded.';
+const DEFAULT_LABEL = 'Drop a CSV, JSON or NDJSON file here';
+const DEFAULT_PLACEHOLDER = 'name,score\nAda,12';
+const DEFAULT_ACCEPT = '.csv,.json,.ndjson,.jsonl,.txt,text/csv,application/json';
 
 // <byo-data sample-url="sample.csv" max-bytes="5242880"></byo-data>
+//
+//   Attributes (all optional)
+//     sample-url         adds a "Use sample data" button
+//     max-bytes          size limit, default 5 MiB
+//     label              heading of the drop zone
+//     paste-placeholder  placeholder text of the paste box
+//     accept             accept value of the file picker, also shown as a hint
+//     hide-paste         hides the paste box
 //
 //   el.validate = (data) => string[]     optional; any strings are shown as errors
 //   el.addEventListener('byo-data', (e) => e.detail)   { data, name, source, bytes }
@@ -409,36 +425,39 @@ class ByoData extends ElementBase {
       type: 'file',
       hidden: true,
       'aria-label': 'Choose a data file',
-      accept: '.csv,.json,.ndjson,.jsonl,.txt,text/csv,application/json',
+      accept: DEFAULT_ACCEPT,
     });
     this._pick = h('button', { type: 'button', part: 'button primary', class: 'primary' }, 'Choose file');
     this._sample = h('button', { type: 'button', part: 'button', hidden: !sampleUrl }, 'Use sample data');
+    this._title = h('strong', null, DEFAULT_LABEL);
+    this._hint = h('span', { class: 'hint', part: 'hint', hidden: true });
     this._dz = h(
       'div',
       { class: 'dz', part: 'dropzone', role: 'group', 'aria-label': 'Drop a data file here' },
-      h('strong', null, 'Drop a CSV, JSON or NDJSON file here'),
+      this._title,
+      this._hint,
       h('div', { class: 'row' }, this._pick, this._sample, this._file),
     );
     this._text = h('textarea', {
       id: 'paste',
       part: 'textarea',
-      rows: '3',
+      rows: '2',
       spellcheck: 'false',
-      placeholder: 'name,score\nAda,12',
+      placeholder: DEFAULT_PLACEHOLDER,
     });
     this._use = h('button', { type: 'button', part: 'button' }, 'Use pasted data');
-    const paste = h(
+    this._paste = h(
       'div',
       { class: 'paste' },
       h('label', { for: 'paste', part: 'label' }, 'Or paste data'),
-      this._text,
-      h('div', { class: 'row' }, this._use),
+      h('div', { class: 'pr' }, this._text, this._use),
     );
     this._privacy = h('p', { class: 'privacy', part: 'privacy' }, PRIVACY_LINE);
     this._status = h('p', { class: 'status', part: 'status', role: 'status', 'aria-live': 'polite' });
     this._errors = h('ul', { class: 'errors', part: 'errors', role: 'alert', hidden: true });
-    this._root.append(h('section', { class: 'box', part: 'box' }, this._dz, paste, this._privacy, this._status, this._errors));
+    this._root.append(h('section', { class: 'box', part: 'box' }, this._dz, this._paste, this._privacy, this._status, this._errors));
 
+    this._applyOptions();
     this._pick.addEventListener('click', () => this._file.click());
     this._file.addEventListener('change', () => {
       const f = this._file.files && this._file.files[0];
@@ -466,11 +485,23 @@ class ByoData extends ElementBase {
   }
 
   static get observedAttributes() {
-    return ['sample-url'];
+    return ['sample-url', 'label', 'paste-placeholder', 'accept', 'hide-paste'];
   }
 
-  attributeChangedCallback(name) {
-    if (name === 'sample-url' && this._sample) this._sample.hidden = !this.getAttribute('sample-url');
+  attributeChangedCallback() {
+    if (this._sample) this._applyOptions();
+  }
+
+  // Reads the display attributes. An empty or missing value restores the default.
+  _applyOptions() {
+    this._sample.hidden = !this.getAttribute('sample-url');
+    this._title.textContent = this.getAttribute('label') || DEFAULT_LABEL;
+    this._text.setAttribute('placeholder', this.getAttribute('paste-placeholder') || DEFAULT_PLACEHOLDER);
+    const accept = (this.getAttribute('accept') || '').trim();
+    this._file.setAttribute('accept', accept || DEFAULT_ACCEPT);
+    this._hint.textContent = accept ? 'Accepted: ' + accept.split(',').map((t) => t.trim()).filter(Boolean).join(', ') : '';
+    this._hint.hidden = !accept;
+    this._paste.hidden = this.hasAttribute('hide-paste');
   }
 
   clear() {
@@ -607,8 +638,7 @@ const anthropic = Object.freeze({
   mode: 'direct',
   endpoint: 'https://api.anthropic.com',
   note:
-    'Anthropic only accepts browser calls that send the header anthropic-dangerous-direct-browser-access: true. ' +
-    'The name is a warning: the key is visible to this page, so use a key you can revoke.',
+    'Browser calls send the header anthropic-dangerous-direct-browser-access: true. Use a key you can revoke.',
   auth: Object.freeze({ header: 'x-api-key', prefix: '' }),
   headers: Object.freeze({
     'anthropic-version': '2023-06-01',
@@ -617,22 +647,25 @@ const anthropic = Object.freeze({
   testPath: '/v1/models',
 });
 
-// api.typesafe.ai sends no Access-Control-Allow-Origin header, so a browser
-// cannot call it directly. Calls go through the relay in relay/index.js.
-const typesafe = Object.freeze({
-  id: 'typesafe',
-  label: 'TypeSafe (Jev)',
-  keyPattern: '^[A-Za-z0-9._-]{16,}$',
-  docsUrl: 'https://docs.typesafe.ai',
-  mode: 'relay',
-  endpoint: 'https://api.typesafe.ai',
-  relayPath: '/api/typesafe',
+// OpenRouter answers browser preflights for /api/v1/chat/completions and
+// /api/alpha/decisions with access-control-allow-origin: * and allows the
+// Authorization, Content-Type, HTTP-Referer and X-Title headers, so the browser
+// calls it directly. One key reaches many models. GET /api/v1/key is a cheap
+// key test: it returns the key's label and limit.
+const openrouter = Object.freeze({
+  id: 'openrouter',
+  label: 'OpenRouter',
+  keyPattern: '^sk-or-v1-[A-Fa-f0-9]{64}$',
+  docsUrl: 'https://openrouter.ai/settings/keys',
+  mode: 'direct',
+  endpoint: 'https://openrouter.ai',
+  note: 'Make a key with a small credit limit for this demo, so a leaked key can only spend a little.',
   auth: Object.freeze({ header: 'authorization', prefix: 'Bearer ' }),
   headers: Object.freeze({}),
-  testPath: '/v1/models',
+  testPath: '/api/v1/key',
 });
 
-const PROVIDERS = Object.freeze({ openai, anthropic, typesafe });
+const PROVIDERS = Object.freeze({ openrouter, openai, anthropic });
 
 function getProvider(id) {
   return PROVIDERS[id] || null;
@@ -676,7 +709,7 @@ function checkKeyFormat(provider, key) {
   const p = ensure(provider);
   if (typeof key !== 'string' || !key.trim()) return 'Enter a key.';
   if (p.keyPattern && !p.keyPattern.test(key.trim())) {
-    return 'That does not look like a ' + p.label + ' key. Check you copied all of it.';
+    return 'That does not match the ' + p.label + ' key format. Check you copied all of it.';
   }
   return null;
 }
@@ -940,15 +973,17 @@ class ByoKey extends ElementBase {
         text,
       );
     const fieldset = h(
-      'fieldset',
-      null,
-      h('legend', null, 'Where to keep the key'),
-      radio('memory', 'In memory only. Gone when you reload (default).'),
-      radio('session', 'In sessionStorage. Gone when you close this tab.'),
+      'div',
+      { class: 'keep', role: 'radiogroup', 'aria-label': 'Where to keep the key' },
+      h('span', { class: 'lead', 'aria-hidden': 'true' }, 'Keep it'),
+      radio('memory', 'In memory (default)'),
+      radio('session', 'In sessionStorage'),
     );
 
     const routeBox = h('p', { class: 'route', part: 'route' }, route.text);
     if (p.note) routeBox.append(h('span', { class: 'note' }, p.note));
+    // Memory is gone on reload. sessionStorage is gone when the tab closes.
+    fieldset.title = 'Memory: gone when you reload. sessionStorage: gone when you close the tab.';
 
     const head = h('div', { class: 'head' }, h('label', { for: 'key', part: 'label' }, p.label + ' API key'));
     if (p.docsUrl) {
@@ -1111,6 +1146,117 @@ function toCsv(rows, columns) {
   return lines.join('\r\n') + '\r\n';
 }
 
+// ---- src/core/openrouter.js
+// OpenRouter Decisions API helper. No DOM, so it runs under node --test.
+//
+//   const { answers } = await openrouterDecide({
+//     key, state: { ticket: '...' },
+//     questions: {
+//       topic:  { type: 'choice', instructions: 'Which team handles `ticket`?',
+//                 criteria: { billing: 'Charges and invoices', bug: 'Something broken', other: null } },
+//       urgent: { type: 'noul',   instructions: '`ticket` asks for help today' },
+//       anger:  { type: 'score',  instructions: 'How upset is the writer?', criteria: ['Calm', 'Annoyed', 'Furious'] },
+//     },
+//   });
+//   answers.topic   // { type: 'choice', choice, probabilities, confidence }
+//   answers.urgent  // { type: 'noul', noul }    probability of yes, 0..1
+//   answers.anger   // { type: 'score', score, probabilities, confidence }
+//
+// The default model is TypeSafe's Jev. Every answer is checked against its question:
+// a choice must be one of the criteria keys, a noul a number in [0, 1], a score a
+// number within the levels. Anything else throws.
+
+const DECISIONS_URL = 'https://openrouter.ai/api/alpha/decisions';
+const JEV_MODEL = 'typesafe/jev-1.14';
+
+class OpenRouterError extends Error {
+  constructor(message, status = 0) {
+    super(message);
+    this.name = 'OpenRouterError';
+    this.status = status;
+  }
+}
+
+const scrub = (text, key) => (key ? String(text).split(key).join('[key]') : String(text));
+
+const TYPES = new Set(['choice', 'score', 'noul']);
+
+function checkQuestion(id, q) {
+  if (!q || typeof q !== 'object' || !TYPES.has(q.type)) throw new TypeError('Question "' + id + '" needs type choice, score or noul.');
+  if (!q.instructions) throw new TypeError('Question "' + id + '" needs instructions.');
+  if (q.type === 'choice' && (!q.criteria || typeof q.criteria !== 'object' || Array.isArray(q.criteria) || Object.keys(q.criteria).length < 2)) {
+    throw new TypeError('Choice question "' + id + '" needs criteria: an object with at least two options.');
+  }
+  if (q.type === 'score' && (!Array.isArray(q.criteria) || q.criteria.length < 2)) {
+    throw new TypeError('Score question "' + id + '" needs criteria: a list of at least two levels, lowest first.');
+  }
+}
+
+const inRange = (n, lo, hi) => typeof n === 'number' && Number.isFinite(n) && n >= lo && n <= hi;
+
+function checkAnswer(id, q, a, status) {
+  const fail = (why) => { throw new OpenRouterError('Question "' + id + '": ' + why, status); };
+  if (!a || typeof a !== 'object') fail('no answer came back.');
+  if (q.type === 'choice') {
+    const options = Object.keys(q.criteria);
+    if (!options.includes(a.choice)) fail('the model chose "' + a.choice + '", which is not one of: ' + options.join(', ') + '.');
+  } else if (q.type === 'noul') {
+    if (!inRange(a.noul, 0, 1)) fail('expected a probability between 0 and 1.');
+  } else if (!inRange(a.score, 0, q.criteria.length - 1)) {
+    fail('expected a score between 0 and ' + (q.criteria.length - 1) + '.');
+  }
+}
+
+function statusHint(status, model) {
+  if (status === 401) {
+    return 'OpenRouter rejected the key (HTTP 401). Check you copied all of it, or make a new one at https://openrouter.ai/settings/keys.';
+  }
+  if (status === 402) {
+    return 'OpenRouter says the key is out of credit or over its limit (HTTP 402). Add credit or raise the key limit.';
+  }
+  if (status === 404) {
+    return model.startsWith('typesafe/')
+      ? 'OpenRouter answered HTTP 404 for ' + model + '. Jev may be blocked by your OpenRouter guardrails. Check the guardrail settings for your account.'
+      : 'OpenRouter answered HTTP 404 for ' + model + '. The model name may be wrong, or your OpenRouter guardrails may block it.';
+  }
+  return '';
+}
+
+async function openrouterDecide({ key, model = JEV_MODEL, state, questions, fetch: fetchImpl } = {}) {
+  if (typeof key !== 'string' || !key.trim()) throw new TypeError('Enter an OpenRouter key.');
+  if (!questions || typeof questions !== 'object' || Array.isArray(questions) || !Object.keys(questions).length) {
+    throw new TypeError('Give at least one question, as an object of id to question.');
+  }
+  for (const [id, q] of Object.entries(questions)) checkQuestion(id, q);
+  const doFetch = fetchImpl || globalThis.fetch;
+  const apiKey = key.trim();
+  let res;
+  try {
+    res = await doFetch(DECISIONS_URL, {
+      method: 'POST',
+      headers: { authorization: 'Bearer ' + apiKey, 'content-type': 'application/json' },
+      body: JSON.stringify({ model, state, questions }),
+    });
+  } catch {
+    throw new OpenRouterError('Could not reach openrouter.ai. Check your connection.');
+  }
+  let json = null;
+  try {
+    json = await res.json();
+  } catch {
+    /* not JSON */
+  }
+  if (!res.ok) {
+    const hint = statusHint(res.status, model);
+    const detail = json?.error?.message ? ' ' + scrub(json.error.message, apiKey) : '';
+    throw new OpenRouterError(hint ? hint + detail : 'OpenRouter answered HTTP ' + res.status + '.' + detail, res.status);
+  }
+  const answers = json?.answers;
+  if (!answers || typeof answers !== 'object') throw new OpenRouterError('OpenRouter returned no answers.', res.status);
+  for (const [id, q] of Object.entries(questions)) checkAnswer(id, q, answers[id], res.status);
+  return { model: json.model || model, answers };
+}
+
 // ---- src/index.js
 // byo-kit: bring your own data and bring your own key, for static demos.
 
@@ -1135,9 +1281,9 @@ export {
   neutralizeFormula,
   countNetworkCalls,
   PROVIDERS,
+  openrouter,
   openai,
   anthropic,
-  typesafe,
   getProvider,
   normalizeProvider,
   checkKeyFormat,
@@ -1145,6 +1291,10 @@ export {
   requestFor,
   createKeyTest,
   hostOf,
+  openrouterDecide,
+  OpenRouterError,
+  DECISIONS_URL,
+  JEV_MODEL,
   createKeyStore,
   maskKey,
   downloadText,

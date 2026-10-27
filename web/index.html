@@ -32,7 +32,7 @@ iframe{display:block;width:100%;border:0;min-height:900px;background:var(--bg)}
       <section aria-labelledby="h-data">
         <h3 id="h-data">1. Your compliance snapshot</h3>
         <p>Create one with <code>pipx install git+https://github.com/dallascrilley/intune-why</code> then <code>intune-why collect --tenant your-tenant.onmicrosoft.com</code>. It is read-only and writes <code>intune-snapshot.json</code>. This page analyzes it in your browser.</p>
-        <byo-data id="data" sample-url="demo_snapshot.json" accept=".json,application/json"></byo-data>
+        <byo-data id="data" sample-url="demo_snapshot.json" accept=".json,application/json" label="Drop intune-snapshot.json here" hide-paste></byo-data>
         <div class="err" id="error" role="alert"></div>
       </section>
       <section aria-labelledby="h-key">
