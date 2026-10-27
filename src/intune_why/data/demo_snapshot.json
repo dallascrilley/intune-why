@@ -1,0 +1,3897 @@
+{
+ "schema": "intune-why/snapshot@1",
+ "source": "demo",
+ "collected_at": "2026-10-27T15:00:00Z",
+ "tenant": "northwind.example",
+ "devices": [
+  {
+   "id": "fd7dcd0f-71ad-4193-a39b-f51f0e80f555",
+   "name": "NW-LT-1003",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "harper.moreno@northwind.example",
+   "last_sync": "2026-10-25T02:57:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "55797d05-8998-49be-a8c7-9345c7f9cf0e",
+   "name": "NW-LT-1012",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "casey.diaz@northwind.example",
+   "last_sync": "2026-10-27T12:48:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "57354d2b-ecab-4a0c-a4c1-26be1ee814ce",
+   "name": "NW-LT-1016",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "finley.moreno@northwind.example",
+   "last_sync": "2026-10-27T04:11:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "488e1cf7-52a2-49ff-a633-d0f72530cfa8",
+   "name": "NW-LT-1019",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "kendall.diaz@northwind.example",
+   "last_sync": "2026-10-21T22:27:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "dc12dacd-f581-4742-ab32-85a0baef0178",
+   "name": "NW-LT-1025",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "kendall.adams@northwind.example",
+   "last_sync": "2026-10-27T10:35:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "1490e255-ad25-4b34-a6a2-316f56a394fd",
+   "name": "NW-LT-1030",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "skyler.kim@northwind.example",
+   "last_sync": "2026-10-25T23:52:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "8ca0dcf7-0b96-4cef-a535-416f6b1e8e94",
+   "name": "NW-LT-1032",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "emery.hughes@northwind.example",
+   "last_sync": "2026-10-19T05:56:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "2c2fc202-6ba3-4a21-adf9-ddcfe52afd11",
+   "name": "NW-LT-1037",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "logan.ramos@northwind.example",
+   "last_sync": "2026-10-19T05:01:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "08923e71-678a-408e-a4bd-5176221bc837",
+   "name": "NW-LT-1042",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "blake.chen@northwind.example",
+   "last_sync": "2026-08-01T11:44:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "a8b686b2-83e3-4a23-aecd-53d3cdc3bc3a",
+   "name": "NW-LT-1046",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "blake.ellis@northwind.example",
+   "last_sync": "2026-10-26T13:35:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "09e3bee4-a9cb-4803-a7a3-272325ab5143",
+   "name": "NW-LT-1052",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "drew.adams@northwind.example",
+   "last_sync": "2026-09-07T12:16:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "eb9a84d8-37f8-41d6-aa55-fe608cc41c35",
+   "name": "NW-LT-1055",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "skyler.zhang@northwind.example",
+   "last_sync": "2026-10-25T23:10:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "712cfc98-d27d-470f-a543-e2e5def606bb",
+   "name": "NW-LT-1056",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "skyler.young@northwind.example",
+   "last_sync": "2026-10-27T14:12:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "e130bf42-a451-4814-aa60-ea0fc13f2846",
+   "name": "NW-LT-1063",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "hayden.patel@northwind.example",
+   "last_sync": "2026-10-26T08:57:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "04cd77be-dc97-4c40-a1db-4aad06a53285",
+   "name": "NW-LT-1064",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "blake.silva@northwind.example",
+   "last_sync": "2026-10-27T05:33:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "9c7d68e6-e66f-4aae-afc5-744331f608eb",
+   "name": "NW-LT-1065",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "devon.ito@northwind.example",
+   "last_sync": "2026-10-18T18:50:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "0d6646c0-192f-42a3-aa40-f83a097c8d31",
+   "name": "NW-LT-1072",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "taylor.lopez@northwind.example",
+   "last_sync": "2026-10-26T16:40:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "6e831633-12e6-479a-adb0-30c684d45d1f",
+   "name": "NW-LT-1073",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "logan.young@northwind.example",
+   "last_sync": "2026-10-26T01:43:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "3ea3eb7e-f51c-4e5e-a8ad-c36cd983bb33",
+   "name": "NW-LT-1076",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "drew.chen@northwind.example",
+   "last_sync": "2026-10-24T12:05:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "27dbfa93-d202-43de-a514-1bf0dde64d34",
+   "name": "NW-LT-1077",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "kendall.vance@northwind.example",
+   "last_sync": "2026-10-19T01:15:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "d6fbcce0-3f91-44d5-a629-93a33d24845a",
+   "name": "NW-LT-1079",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "morgan.walsh@northwind.example",
+   "last_sync": "2026-10-25T20:51:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "087360d4-f58e-413c-a8b4-9cb6bad75b29",
+   "name": "NW-LT-1086",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "sawyer.jensen@northwind.example",
+   "last_sync": "2026-10-26T01:26:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "ac74d67d-7700-463c-af81-61234d1911a8",
+   "name": "NW-LT-1091",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "jordan.jensen@northwind.example",
+   "last_sync": "2026-08-26T14:17:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "9082a865-2007-44e7-a071-66a43fd3b49d",
+   "name": "NW-LT-1100",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "kendall.nguyen@northwind.example",
+   "last_sync": "2026-08-23T05:19:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "6ee1b272-edce-45af-a404-ecc81372b88d",
+   "name": "NW-LT-1104",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "alex.ramos@northwind.example",
+   "last_sync": "2026-10-23T19:35:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "03876cd5-dca0-4d9b-a2fb-c5e3de878292",
+   "name": "NW-LT-1111",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "reese.young@northwind.example",
+   "last_sync": "2026-10-24T01:55:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "2a241844-80f7-45cb-a603-1f834572e94c",
+   "name": "NW-LT-1118",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "skyler.jensen@northwind.example",
+   "last_sync": "2026-10-25T03:21:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "027665f2-5685-43ec-af31-b525b952a553",
+   "name": "NW-LT-1126",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "jesse.walsh@northwind.example",
+   "last_sync": "2026-10-25T19:50:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "9fb09907-a5a0-49cc-a8b6-fb274fdf65a5",
+   "name": "NW-LT-1133",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "parker.brooks@northwind.example",
+   "last_sync": "2026-10-25T09:13:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "fdef2daa-534e-4bba-a2dc-3e3753873a8e",
+   "name": "NW-LT-1141",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "rowan.silva@northwind.example",
+   "last_sync": "2026-10-21T21:04:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "a2ec0c4b-1112-4f3f-a7e6-97b0a4a9db30",
+   "name": "NW-LT-1144",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "reese.okafor@northwind.example",
+   "last_sync": "2026-10-25T08:39:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "e438409a-135d-4185-a009-26dad3cddfe4",
+   "name": "NW-LT-1148",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "devon.silva@northwind.example",
+   "last_sync": "2026-10-25T16:39:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "15edba0b-b642-4f71-abf3-74f24ec584c5",
+   "name": "NW-LT-1157",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "avery.lopez@northwind.example",
+   "last_sync": "2026-10-24T14:38:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "766e62a1-00f8-4864-a860-b18e19ba3e5a",
+   "name": "NW-LT-1159",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "finley.adams@northwind.example",
+   "last_sync": "2026-10-19T03:58:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "8d1351e1-534c-4e66-a305-d8ca27e4a698",
+   "name": "NW-LT-1168",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "logan.diaz@northwind.example",
+   "last_sync": "2026-09-04T23:43:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "6ccc37ca-77dd-4230-a960-c5f0b14d3801",
+   "name": "NW-LT-1173",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "parker.ito@northwind.example",
+   "last_sync": "2026-10-22T13:31:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "d6646b9d-c32f-4311-a228-fa23e1a6bd74",
+   "name": "NW-LT-1177",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "reese.brooks@northwind.example",
+   "last_sync": "2026-10-22T03:16:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "cb9cc286-d899-4fbc-add8-963c0e6da757",
+   "name": "NW-LT-1179",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "hayden.chen@northwind.example",
+   "last_sync": "2026-10-22T09:38:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "06253a42-8cd1-4e2d-afdb-89559bfadb93",
+   "name": "NW-LT-1183",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "kendall.brooks@northwind.example",
+   "last_sync": "2026-10-22T07:37:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "012be07a-84ea-4339-a086-d68bb91710ce",
+   "name": "NW-LT-1188",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "parker.moreno@northwind.example",
+   "last_sync": "2026-10-26T03:42:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "74f11ec8-5e15-468e-af13-9185b210f6e1",
+   "name": "NW-LT-1196",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "devon.nguyen@northwind.example",
+   "last_sync": "2026-10-24T05:19:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "d7750fd4-1d19-4550-a9c5-d6dac32f0270",
+   "name": "NW-LT-1198",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "quinn.zhang@northwind.example",
+   "last_sync": "2026-10-26T07:06:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "1cc08fd1-957a-4651-a985-91488cfaa4bc",
+   "name": "NW-LT-1205",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "harper.jensen@northwind.example",
+   "last_sync": "2026-10-26T03:24:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "d509178a-2caf-440f-adb4-6adfbbf8e4ce",
+   "name": "NW-LT-1211",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "elliot.ito@northwind.example",
+   "last_sync": "2026-10-25T03:47:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "b714f156-9437-4632-a6b7-83902197be96",
+   "name": "NW-LT-1219",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "sawyer.patel@northwind.example",
+   "last_sync": "2026-07-14T03:12:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "63a53399-a34f-4bd0-ad41-86f5907b3f35",
+   "name": "NW-LT-1223",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "reese.torres@northwind.example",
+   "last_sync": "2026-10-19T12:06:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "7f2c8001-00ee-4904-ad94-ccefbfc7834c",
+   "name": "NW-LT-1232",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "rowan.okafor@northwind.example",
+   "last_sync": "2026-10-27T10:11:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "71ada250-dd61-4b8a-a209-06ba7988f98c",
+   "name": "NW-LT-1240",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "emery.chen@northwind.example",
+   "last_sync": "2026-10-26T02:14:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "820c7507-6dc0-4e38-a11a-c9e93e3c5a81",
+   "name": "NW-LT-1249",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "jesse.chen@northwind.example",
+   "last_sync": "2026-10-26T09:15:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "2189e7cf-9814-49ef-a289-7358ca589f8f",
+   "name": "NW-LT-1255",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "elliot.zhang@northwind.example",
+   "last_sync": "2026-10-26T01:09:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "3f86ad5d-d026-41c9-a41f-9063926e9388",
+   "name": "NW-LT-1260",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "hayden.young@northwind.example",
+   "last_sync": "2026-05-27T22:16:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "214be1d7-b33b-4c1e-abfe-239a747d0dbf",
+   "name": "NW-LT-1266",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "rowan.chen@northwind.example",
+   "last_sync": "2026-07-30T02:10:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "96b1b946-0307-4ece-aa01-a1557f94a009",
+   "name": "NW-LT-1274",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "taylor.nguyen@northwind.example",
+   "last_sync": "2026-10-26T04:05:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "b627bb20-58a4-4c6e-acde-06bf28fa81b3",
+   "name": "NW-LT-1275",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "quinn.garcia@northwind.example",
+   "last_sync": "2026-10-26T19:29:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "089d5987-1841-46b7-aa4e-1c723062dd27",
+   "name": "NW-LT-1282",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "harper.chen@northwind.example",
+   "last_sync": "2026-10-26T06:10:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "cf456007-4151-4d81-a251-978ebfb2b546",
+   "name": "NW-LT-1283",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "blake.okafor@northwind.example",
+   "last_sync": "2026-10-26T16:04:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "cabdcafe-c93e-44a2-af98-28af316fc9fa",
+   "name": "NW-LT-1292",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "morgan.jensen@northwind.example",
+   "last_sync": "2026-10-23T22:50:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "6115169a-aff5-4155-a925-41c7a1f76ba4",
+   "name": "NW-LT-1299",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "sawyer.brooks@northwind.example",
+   "last_sync": "2026-10-25T02:30:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "bbb2eafc-ced4-4b16-a0b3-93c483faa9d8",
+   "name": "NW-LT-1306",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "drew.zhang@northwind.example",
+   "last_sync": "2026-10-26T17:58:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "89698f61-4c64-4740-a47e-15acd80276b9",
+   "name": "NW-LT-1309",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "riley.jensen@northwind.example",
+   "last_sync": "2026-10-26T06:24:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "f4a25239-a3d1-491a-a05b-cec8b054d577",
+   "name": "NW-LT-1313",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "quinn.torres@northwind.example",
+   "last_sync": "2026-10-25T23:12:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "a6058ea3-1978-4ac5-ad8f-a9295c507396",
+   "name": "NW-LT-1317",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "kendall.jensen@northwind.example",
+   "last_sync": "2026-10-19T01:30:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "5da9bbe6-75f7-4784-af98-2f897235301b",
+   "name": "NW-LT-1321",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "casey.moreno@northwind.example",
+   "last_sync": "2026-10-27T06:48:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "e015b000-d9f7-4585-ae12-828b10bb25d8",
+   "name": "NW-LT-1328",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "elliot.garcia@northwind.example",
+   "last_sync": "2026-10-19T14:56:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "1be6f236-c58a-47ca-afa1-b0c5011ab7cd",
+   "name": "NW-LT-1329",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "casey.patel@northwind.example",
+   "last_sync": "2026-10-25T06:28:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "27de3032-12a1-420b-ae90-42a2c5e282fa",
+   "name": "NW-LT-1332",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "logan.kim@northwind.example",
+   "last_sync": "2026-10-25T09:19:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "3df23b5d-9a65-4088-a950-1d0a052b3d7f",
+   "name": "NW-LT-1336",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "blake.adams@northwind.example",
+   "last_sync": "2026-06-22T01:07:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "8a902297-d0f7-433f-aff3-ccb1d289480d",
+   "name": "NW-LT-1345",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "alex.ellis@northwind.example",
+   "last_sync": "2026-10-26T03:14:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "487b8131-46a1-4310-a24c-3fce22674c9b",
+   "name": "NW-LT-1348",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "finley.okafor@northwind.example",
+   "last_sync": "2026-10-22T12:49:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "7e33424e-a4ba-439a-ab00-2f66b2a8285d",
+   "name": "NW-LT-1356",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "finley.kim@northwind.example",
+   "last_sync": "2026-10-22T01:58:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "d5b1f5f0-3dd3-462d-af70-fde616bf586d",
+   "name": "NW-LT-1361",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "morgan.ito@northwind.example",
+   "last_sync": "2026-10-26T00:45:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "6f6b2069-4e78-4985-a3c0-d726bd5e0481",
+   "name": "NW-LT-1365",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "quinn.silva@northwind.example",
+   "last_sync": "2026-10-19T00:34:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "1662c433-db38-410b-a269-62b2c262c717",
+   "name": "NW-LT-1370",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "hayden.jensen@northwind.example",
+   "last_sync": "2026-10-26T05:31:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "7c5387a3-6556-419e-af95-451023cb0d07",
+   "name": "NW-LT-1372",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "hayden.moreno@northwind.example",
+   "last_sync": "2026-10-24T20:24:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "afdb7140-9dbd-40a3-a849-33a281880d5d",
+   "name": "NW-LT-1375",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "logan.okafor@northwind.example",
+   "last_sync": "2026-10-25T10:44:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "da0b6dfa-4197-446d-a95d-47bc156e1394",
+   "name": "NW-LT-1377",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "jamie.zhang@northwind.example",
+   "last_sync": "2026-10-27T13:22:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "8054890c-389e-4672-a38c-c615900d7a22",
+   "name": "NW-LT-1380",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "devon.okafor@northwind.example",
+   "last_sync": "2026-10-22T13:28:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "3f3b00fc-41ac-41d6-aba0-d5f29c9419f1",
+   "name": "NW-LT-1383",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "reese.ramos@northwind.example",
+   "last_sync": "2026-10-24T18:43:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "357b26f0-7717-415d-a275-5b20c4c7d216",
+   "name": "NW-LT-1391",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "riley.okafor@northwind.example",
+   "last_sync": "2026-10-25T06:16:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "41d9dfc1-559c-4356-a9f4-5d865278d44b",
+   "name": "NW-LT-1400",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "sawyer.ito@northwind.example",
+   "last_sync": "2026-10-22T04:01:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "00616e93-1e3a-4ce7-a736-3effa27275ea",
+   "name": "NW-LT-1404",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "skyler.foster@northwind.example",
+   "last_sync": "2026-10-25T23:28:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "38796076-5425-49c8-a5e7-001296ac0a92",
+   "name": "NW-LT-1413",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "drew.patel@northwind.example",
+   "last_sync": "2026-10-26T03:12:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "4cf14787-c235-444e-af7d-f3d1e96c170a",
+   "name": "NW-LT-1416",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "drew.silva@northwind.example",
+   "last_sync": "2026-10-27T02:40:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "7d72a0ab-80f4-477c-a646-92a6f7796984",
+   "name": "NW-LT-1420",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "emery.zhang@northwind.example",
+   "last_sync": "2026-10-24T17:45:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "d310e00e-16b5-4c6b-a8d9-ddd2aeb729a8",
+   "name": "NW-LT-1426",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "skyler.chen@northwind.example",
+   "last_sync": "2026-10-25T19:59:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "71f63200-9d28-47f7-a397-e7275dfaded2",
+   "name": "NW-LT-1430",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "riley.walsh@northwind.example",
+   "last_sync": "2026-10-19T06:18:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "f76d532d-627f-4d8a-a281-2353cbf24d43",
+   "name": "NW-LT-1432",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "quinn.adams@northwind.example",
+   "last_sync": "2026-10-18T21:43:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "e03f5d58-b757-4943-a254-e4f6454fc0aa",
+   "name": "NW-LT-1438",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "alex.zhang@northwind.example",
+   "last_sync": "2026-10-21T22:09:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "e96f5738-c13f-41ff-a01f-4cb5fc02a48f",
+   "name": "NW-LT-1445",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "avery.garcia@northwind.example",
+   "last_sync": "2026-10-22T11:20:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "4b7a95b5-be9f-456e-a87d-351392acca89",
+   "name": "NW-LT-1448",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "drew.ellis@northwind.example",
+   "last_sync": "2026-10-25T08:40:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "e1a57d3b-abd7-4a89-aa25-62f26e1ac6b4",
+   "name": "NW-LT-1452",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "elliot.ramos@northwind.example",
+   "last_sync": "2026-10-27T03:35:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "dfc28fa9-4811-43c6-a573-1f8eb88edf92",
+   "name": "NW-LT-1456",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "casey.lopez@northwind.example",
+   "last_sync": "2026-10-22T10:06:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "eab13c2a-5d37-415c-a7df-b69ba12d2635",
+   "name": "NW-LT-1459",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "parker.garcia@northwind.example",
+   "last_sync": "2026-10-22T04:24:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "c1f2c18b-89bd-4d7c-a79e-3cbccc85ab1b",
+   "name": "NW-LT-1465",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "emery.torres@northwind.example",
+   "last_sync": "2026-10-23T21:07:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "a331cea6-16c9-4f77-a153-db40d4d53cd6",
+   "name": "NW-LT-1473",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "parker.adams@northwind.example",
+   "last_sync": "2026-10-26T09:17:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "828eba93-d58a-4eac-ac7d-04e6094add33",
+   "name": "NW-LT-1474",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "logan.zhang@northwind.example",
+   "last_sync": "2026-10-22T01:39:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "a88de1be-3f0c-4271-a63b-b1b41ccdbc9d",
+   "name": "NW-LT-1475",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "jordan.patel@northwind.example",
+   "last_sync": "2026-10-27T01:24:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "32aaa09f-94bb-4e69-a98a-bf2f3224d2ac",
+   "name": "NW-LT-1480",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "morgan.chen@northwind.example",
+   "last_sync": "2026-10-18T23:16:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "cc0c6452-bea6-40b7-af5b-37a3fd54e23c",
+   "name": "NW-LT-1483",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "avery.silva@northwind.example",
+   "last_sync": "2026-10-23T21:04:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "f31e8c55-334e-44dc-af85-f7f494e6d842",
+   "name": "NW-LT-1492",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "quinn.ito@northwind.example",
+   "last_sync": "2026-10-24T01:39:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "d00eb8a1-2a01-4acb-a6b8-77f2defd0a7e",
+   "name": "NW-LT-1495",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "hayden.hughes@northwind.example",
+   "last_sync": "2026-10-25T09:42:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "beb5913e-1fb8-4dd5-aef5-ba4e919fb696",
+   "name": "NW-LT-1499",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "harper.garcia@northwind.example",
+   "last_sync": "2026-10-25T17:29:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "6eb5a912-c6f4-4538-a227-fba15ed0b285",
+   "name": "NW-LT-1507",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "blake.garcia@northwind.example",
+   "last_sync": "2026-10-26T20:59:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "9170a860-4bfa-4e66-a7a1-3c79dbf4fe9f",
+   "name": "NW-LT-1508",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "riley.moreno@northwind.example",
+   "last_sync": "2026-10-27T08:33:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "37c28651-c8e7-4743-a7d5-bdd64dc0e095",
+   "name": "NW-LT-1513",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "sawyer.diaz@northwind.example",
+   "last_sync": "2026-10-27T00:40:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "3c8a12b8-4aff-4744-a763-b9f94eca5220",
+   "name": "NW-LT-1521",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "jordan.ellis@northwind.example",
+   "last_sync": "2026-10-24T05:02:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "7c28f8d4-97a6-428d-a8a9-2873d1e27978",
+   "name": "NW-LT-1529",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "casey.walsh@northwind.example",
+   "last_sync": "2026-06-29T03:46:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "81d83863-186d-4c4a-a51b-7e98e8464a34",
+   "name": "NW-LT-1536",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "emery.ramos@northwind.example",
+   "last_sync": "2026-10-24T13:17:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "cd6507bc-4083-4a06-ae25-ec16e148c363",
+   "name": "NW-LT-1539",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "blake.nguyen@northwind.example",
+   "last_sync": "2026-10-18T22:21:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "381c5474-b808-424a-affd-21bc1a8f1484",
+   "name": "NW-LT-1540",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "morgan.torres@northwind.example",
+   "last_sync": "2026-10-25T19:22:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "c2275964-f8f6-40c8-ac2a-babef8b65168",
+   "name": "NW-LT-1546",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "finley.chen@northwind.example",
+   "last_sync": "2026-10-26T11:02:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "a5890c0b-022d-4fd1-ae1c-2848024134ea",
+   "name": "NW-LT-1554",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "emery.young@northwind.example",
+   "last_sync": "2026-10-19T01:47:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "f599cef7-5ca2-41ec-ad8b-eacf72672eb3",
+   "name": "NW-LT-1561",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "emery.kim@northwind.example",
+   "last_sync": "2026-10-25T23:38:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "78dcc26f-18dc-4fc0-a7c2-6b5323332c12",
+   "name": "NW-LT-1568",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "elliot.torres@northwind.example",
+   "last_sync": "2026-10-27T08:04:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "d0bf22e5-a772-410e-af01-ef899da76db4",
+   "name": "NW-LT-1571",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "drew.diaz@northwind.example",
+   "last_sync": "2026-10-24T17:54:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "9447138f-5f96-40dd-a1db-527d9acaf7e8",
+   "name": "NW-LT-1579",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "sawyer.silva@northwind.example",
+   "last_sync": "2026-10-19T02:04:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "48462f73-1374-423f-aeb7-da57c525913e",
+   "name": "NW-LT-1584",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "jesse.ramos@northwind.example",
+   "last_sync": "2026-10-19T09:24:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "bb61ac13-ac52-4ff1-aa37-7c43d77ea3b2",
+   "name": "NW-LT-1586",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "sawyer.ramos@northwind.example",
+   "last_sync": "2026-10-23T21:54:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "87f21268-0391-47d8-a974-eb901f9b0b82",
+   "name": "NW-LT-1591",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "rowan.ramos@northwind.example",
+   "last_sync": "2026-10-24T07:31:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "4d03ce76-d196-469e-a104-f5410523ca48",
+   "name": "NW-LT-1600",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "reese.nguyen@northwind.example",
+   "last_sync": "2026-10-27T09:51:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "e79cb8dd-e439-46f0-a59f-ab339d6b3e89",
+   "name": "NW-LT-1601",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "rowan.vance@northwind.example",
+   "last_sync": "2026-10-21T17:32:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "306dfe4d-3526-4b10-aac8-59a172c4a72e",
+   "name": "NW-LT-1604",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "harper.ellis@northwind.example",
+   "last_sync": "2026-10-19T05:13:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "fb6d82a8-454c-45b2-a4b8-b644911e27d2",
+   "name": "NW-LT-1608",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "alex.nguyen@northwind.example",
+   "last_sync": "2026-10-18T23:16:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "50f1e803-670e-4600-aaaa-acabadcfa0de",
+   "name": "NW-LT-1609",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "reese.zhang@northwind.example",
+   "last_sync": "2026-10-24T17:09:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "f99caf6d-f7e4-493c-ac5d-1f33431c551e",
+   "name": "NW-LT-1613",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "parker.nguyen@northwind.example",
+   "last_sync": "2026-10-27T12:31:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "f69c602c-5634-4303-a1f0-659070f04226",
+   "name": "NW-LT-1616",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "riley.brooks@northwind.example",
+   "last_sync": "2026-10-27T11:42:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "9cedc8a5-4242-44f2-afb1-1d5b5d9085d5",
+   "name": "NW-LT-1625",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "jesse.underwood@northwind.example",
+   "last_sync": "2026-10-25T16:05:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "7a5d0093-9e06-4858-af7f-1433ba809bc6",
+   "name": "NW-LT-1631",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "drew.ito@northwind.example",
+   "last_sync": "2026-10-26T06:52:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "5b3d52bb-9b6e-44f4-ada0-2a7a7d6d7793",
+   "name": "NW-LT-1635",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "elliot.okafor@northwind.example",
+   "last_sync": "2026-10-22T13:52:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "e211f7dc-cfad-4171-a9ad-e75013ad1d65",
+   "name": "NW-LT-1639",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "rowan.garcia@northwind.example",
+   "last_sync": "2026-10-27T00:57:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "0d40db2c-acf4-4708-adab-22a5991b1e5a",
+   "name": "NW-LT-1641",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "emery.brooks@northwind.example",
+   "last_sync": "2026-10-27T01:55:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "559a149c-be66-4871-a275-9e9ee3b641e6",
+   "name": "NW-LT-1646",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "quinn.lopez@northwind.example",
+   "last_sync": "2026-10-27T14:56:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "aa4d9595-e006-4a4b-ab21-39f4fb4d589f",
+   "name": "NW-LT-1647",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "alex.walsh@northwind.example",
+   "last_sync": "2026-10-22T13:33:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "e41f6289-1b7d-4d86-ab59-c13eda693f7b",
+   "name": "NW-LT-1651",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "drew.ramos@northwind.example",
+   "last_sync": "2026-10-19T10:45:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "35dfb2f4-76a6-40ef-ac71-107ada2c6ca4",
+   "name": "NW-LT-1656",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "jamie.ellis@northwind.example",
+   "last_sync": "2026-10-25T14:34:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "eaf54a60-5b11-4041-a065-3c8d1f7930f7",
+   "name": "NW-LT-1658",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "morgan.vance@northwind.example",
+   "last_sync": "2026-10-19T10:37:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "9e8fc8cc-97ab-4998-a991-a7780c7f959d",
+   "name": "NW-LT-1659",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "finley.ito@northwind.example",
+   "last_sync": "2026-10-27T08:50:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "2f6f412a-a833-4581-ae25-e0bfce9883b2",
+   "name": "NW-LT-1668",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "casey.torres@northwind.example",
+   "last_sync": "2026-10-22T06:45:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "ef0aa50c-6856-4ba0-a29a-7651096b059d",
+   "name": "NW-LT-1669",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "jamie.torres@northwind.example",
+   "last_sync": "2026-10-27T04:58:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "a216bdb8-c8fe-46e7-a863-501c0b97c455",
+   "name": "NW-LT-1670",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "jordan.chen@northwind.example",
+   "last_sync": "2026-10-25T22:28:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "62e86517-913a-42ed-a7fb-10d6bf838e57",
+   "name": "NW-LT-1676",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "parker.foster@northwind.example",
+   "last_sync": "2026-10-27T14:03:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "b9cdddfb-65d3-41d2-ad2b-635b209b9f2c",
+   "name": "NW-LT-1683",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "riley.ito@northwind.example",
+   "last_sync": "2026-10-25T05:55:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "2c073d89-e465-4e30-a285-5b8b1228334b",
+   "name": "NW-LT-1684",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "kendall.zhang@northwind.example",
+   "last_sync": "2026-10-19T03:25:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "304b646e-b7fd-4f22-a807-d3b284c37ee4",
+   "name": "NW-LT-1692",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "devon.kim@northwind.example",
+   "last_sync": "2026-10-18T20:30:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "b273a00d-1d96-4c37-a459-539bb80fbb08",
+   "name": "NW-LT-1701",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "emery.vance@northwind.example",
+   "last_sync": "2026-10-24T04:39:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "b3fd38ee-d4fb-42f6-aa94-03d8515e11a6",
+   "name": "NW-LT-1704",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "morgan.young@northwind.example",
+   "last_sync": "2026-10-25T06:41:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "9ed47fa8-3fb8-4087-a37f-18af2c5ad52a",
+   "name": "NW-LT-1712",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "taylor.ito@northwind.example",
+   "last_sync": "2026-10-25T15:48:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "a9aca7cc-d043-48a3-aed9-417f20575c12",
+   "name": "NW-LT-1719",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "avery.foster@northwind.example",
+   "last_sync": "2026-10-27T04:10:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "41cf0c16-c5a8-4227-a04d-2bb7278e6c67",
+   "name": "NW-LT-1722",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "alex.hughes@northwind.example",
+   "last_sync": "2026-10-25T23:14:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "a1c6d72e-41c6-4934-a2da-346a42fed2e3",
+   "name": "NW-LT-1731",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "skyler.okafor@northwind.example",
+   "last_sync": "2026-10-24T08:55:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "8bf61792-b5df-4a50-ad8f-e10fc8d6f6bf",
+   "name": "NW-LT-1739",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "harper.zhang@northwind.example",
+   "last_sync": "2026-10-26T00:33:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "d5a267f4-5117-475b-a77c-4c7f34aabf0e",
+   "name": "NW-LT-1745",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "rowan.jensen@northwind.example",
+   "last_sync": "2026-10-22T14:18:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "31c2fcc3-ecfc-4019-aee0-7623c7a6f444",
+   "name": "NW-LT-1749",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "jordan.walsh@northwind.example",
+   "last_sync": "2026-10-18T20:32:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "c8771e1b-d7a0-4827-a8a9-f1151ec14a4b",
+   "name": "NW-LT-1753",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "blake.underwood@northwind.example",
+   "last_sync": "2026-10-26T21:29:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "25ef3e90-a1e0-4ec2-ac81-d4dd38a45cb9",
+   "name": "NW-LT-1761",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "devon.torres@northwind.example",
+   "last_sync": "2026-10-26T00:02:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "4d96240f-e02c-4357-a8a5-e30417fe2821",
+   "name": "NW-LT-1765",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "kendall.underwood@northwind.example",
+   "last_sync": "2026-10-25T10:26:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "6b00dedf-d529-4b00-a0d9-5e5acca312f4",
+   "name": "NW-LT-1767",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "skyler.hughes@northwind.example",
+   "last_sync": "2026-10-26T07:06:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "96ef4d30-836a-454d-a9e4-b928a6d41243",
+   "name": "NW-LT-1768",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "morgan.diaz@northwind.example",
+   "last_sync": "2026-10-26T21:11:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "025bdc3d-89b1-404f-a47e-e8320d3a4b98",
+   "name": "NW-LT-1775",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "parker.chen@northwind.example",
+   "last_sync": "2026-10-24T19:07:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "3891c8a1-f994-480b-a216-cab320c68ff0",
+   "name": "NW-LT-1783",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "quinn.moreno@northwind.example",
+   "last_sync": "2026-10-23T20:34:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "2af39b13-082f-4331-a597-42212fd1efc0",
+   "name": "NW-LT-1789",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "avery.adams@northwind.example",
+   "last_sync": "2026-08-21T18:43:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "5e354d7a-0591-43dc-ae6a-3c954988e939",
+   "name": "NW-LT-1791",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "devon.foster@northwind.example",
+   "last_sync": "2026-10-22T11:18:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "eaa6f9ea-7969-4059-a42f-63de619b8059",
+   "name": "NW-LT-1796",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "reese.patel@northwind.example",
+   "last_sync": "2026-10-19T00:47:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "1e1ae462-af98-4200-aff2-d43bbff13af1",
+   "name": "NW-LT-1804",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "casey.ito@northwind.example",
+   "last_sync": "2026-10-27T02:14:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "c8312826-9af8-4969-a3a6-b0b0ca7883be",
+   "name": "NW-LT-1811",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "reese.garcia@northwind.example",
+   "last_sync": "2026-10-26T06:34:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "38556a41-3578-44d8-a9dc-729245706c51",
+   "name": "NW-LT-1815",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "reese.underwood@northwind.example",
+   "last_sync": "2026-10-19T09:39:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "5433bdcd-22f6-4f58-a103-6a32326ac293",
+   "name": "NW-LT-1819",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "jamie.chen@northwind.example",
+   "last_sync": "2026-10-24T04:45:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "604ebabd-0704-4686-a2d1-8b0dcafd932b",
+   "name": "NW-LT-1820",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "skyler.torres@northwind.example",
+   "last_sync": "2026-10-27T10:08:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "e20117af-c35b-4c19-ae29-596d1d20cae8",
+   "name": "NW-LT-1827",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "jordan.okafor@northwind.example",
+   "last_sync": "2026-10-23T20:02:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "7a162a47-db8a-4c49-a0c2-099e14dc9723",
+   "name": "NW-LT-1833",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "kendall.lopez@northwind.example",
+   "last_sync": "2026-10-27T12:22:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "37a4887e-1ffa-4b50-a9d4-2d9c6dd8d642",
+   "name": "NW-LT-1835",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "casey.ellis@northwind.example",
+   "last_sync": "2026-10-27T03:56:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "290c8783-bc6c-4c16-a66a-d0ec3c429ca7",
+   "name": "NW-LT-1840",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "taylor.vance@northwind.example",
+   "last_sync": "2026-10-22T03:00:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "1055e6c8-479c-4116-ae1c-87adba345ff4",
+   "name": "NW-LT-1848",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "harper.young@northwind.example",
+   "last_sync": "2026-10-22T02:55:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "753803b9-bbdf-4486-a6dd-79aa94e86bb7",
+   "name": "NW-LT-1857",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "casey.young@northwind.example",
+   "last_sync": "2026-10-27T06:01:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "68349ba2-5415-450a-aa95-8ef1367e2932",
+   "name": "NW-LT-1865",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "skyler.nguyen@northwind.example",
+   "last_sync": "2026-10-19T06:28:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "90c27a15-1756-4dd3-ab2f-84a80affa296",
+   "name": "NW-LT-1869",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "taylor.jensen@northwind.example",
+   "last_sync": "2026-10-26T14:39:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "946e10da-9df4-4289-a001-d6cccbbab97a",
+   "name": "NW-LT-1876",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "finley.silva@northwind.example",
+   "last_sync": "2026-10-26T17:03:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "4b996320-f8ef-4d8a-a22a-4e952c70b3d0",
+   "name": "NW-LT-1884",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "alex.underwood@northwind.example",
+   "last_sync": "2026-10-22T06:11:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "549a6bca-e803-4766-afc8-68be7b12c7d0",
+   "name": "NW-LT-1888",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "finley.garcia@northwind.example",
+   "last_sync": "2026-10-23T18:01:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "f8ced6c5-ca43-44dc-a066-35e98ebe40c7",
+   "name": "NW-LT-1891",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "devon.zhang@northwind.example",
+   "last_sync": "2026-10-19T11:17:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "0145b703-4d52-4cc3-ada8-a57136f552dc",
+   "name": "NW-LT-1897",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "jamie.vance@northwind.example",
+   "last_sync": "2026-07-06T16:39:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "30454123-b6c1-45b5-a6f8-6802dd8e19c2",
+   "name": "NW-LT-1906",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "logan.underwood@northwind.example",
+   "last_sync": "2026-10-19T12:43:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "b5a45f13-5c83-4275-a9a1-d582632f58ec",
+   "name": "NW-LT-1912",
+   "platform": "Windows",
+   "os_version": "10.0.26100.2033",
+   "user": "drew.underwood@northwind.example",
+   "last_sync": "2026-10-22T01:04:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "4d4940d8-0b3f-4725-a7a8-847f3efe7639",
+   "name": "NW-LT-1918",
+   "platform": "Windows",
+   "os_version": "10.0.22631.4317",
+   "user": "jordan.torres@northwind.example",
+   "last_sync": "2026-10-19T14:28:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "c08f9ce5-f671-4677-a1a4-4c0620e47986",
+   "name": "NW-LT-1919",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "drew.lopez@northwind.example",
+   "last_sync": "2026-10-26T11:31:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "ae722fd2-1da4-47c5-aedd-bebdeeaae397",
+   "name": "NW-LT-1921",
+   "platform": "Windows",
+   "os_version": "10.0.19045.5011",
+   "user": "blake.hughes@northwind.example",
+   "last_sync": "2026-10-21T21:12:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "b48a3faa-fd57-482e-aec9-190c4d8e8069",
+   "name": "NW-IPH-1929",
+   "platform": "iOS",
+   "os_version": "18.1",
+   "user": "hayden.vance@northwind.example",
+   "last_sync": "2026-10-26T16:36:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "02c09f56-cc97-412a-a83f-9d41ec0e5477",
+   "name": "NW-IPH-1931",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "harper.brooks@northwind.example",
+   "last_sync": "2026-10-27T07:12:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "4864d710-982e-4ecc-aff4-1095e009390f",
+   "name": "NW-IPH-1938",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "parker.young@northwind.example",
+   "last_sync": "2026-10-22T07:44:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "74adc22f-f414-4398-a8d7-b2c683d3b662",
+   "name": "NW-IPH-1945",
+   "platform": "iOS",
+   "os_version": "18.1",
+   "user": "elliot.moreno@northwind.example",
+   "last_sync": "2026-10-26T19:20:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "15b18e26-1654-4c7a-a9ee-5a5fe6bd41d0",
+   "name": "NW-IPH-1952",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "elliot.underwood@northwind.example",
+   "last_sync": "2026-10-18T18:48:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "69a96e32-bc08-41b3-ab37-a0f11426851d",
+   "name": "NW-IPH-1957",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "elliot.brooks@northwind.example",
+   "last_sync": "2026-10-22T14:21:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "31923b2e-5c84-446b-a384-73a5c8361107",
+   "name": "NW-IPH-1963",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "skyler.brooks@northwind.example",
+   "last_sync": "2026-10-24T03:37:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "5bea2f36-4b0a-4f86-a1d7-e9b785621202",
+   "name": "NW-IPH-1967",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "devon.hughes@northwind.example",
+   "last_sync": "2026-08-08T10:17:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "b4b70714-84fa-4842-a497-3c155e1a67b2",
+   "name": "NW-IPH-1971",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "elliot.nguyen@northwind.example",
+   "last_sync": "2026-10-25T13:29:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "56d187eb-e6c1-43e3-a0b9-6aba0a6eeea8",
+   "name": "NW-IPH-1974",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "reese.foster@northwind.example",
+   "last_sync": "2026-10-19T11:37:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "62d6e631-a0b9-4259-a69f-6540d759af12",
+   "name": "NW-IPH-1980",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "casey.ramos@northwind.example",
+   "last_sync": "2026-10-25T00:49:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "e7ec35ba-63bc-48dc-adb4-434abb252989",
+   "name": "NW-IPH-1989",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "devon.jensen@northwind.example",
+   "last_sync": "2026-10-18T23:14:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "76de14e8-f42a-4904-a045-df69108a0b98",
+   "name": "NW-IPH-1995",
+   "platform": "iOS",
+   "os_version": "18.1",
+   "user": "devon.adams@northwind.example",
+   "last_sync": "2026-10-26T14:07:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "df887147-5208-42f6-a69e-2ed88955c886",
+   "name": "NW-IPH-2001",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "kendall.ito@northwind.example",
+   "last_sync": "2026-10-26T02:47:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "2c4681b3-1e04-4f0a-a51e-05599d91d5cd",
+   "name": "NW-IPH-2006",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "devon.moreno@northwind.example",
+   "last_sync": "2026-10-21T22:11:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "f4b6d5ab-01db-4337-a40f-4be08d7924b1",
+   "name": "NW-IPH-2011",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "skyler.moreno@northwind.example",
+   "last_sync": "2026-10-26T20:54:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "db8c47e8-b3c7-4645-af61-6434e79e5d03",
+   "name": "NW-IPH-2020",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "blake.zhang@northwind.example",
+   "last_sync": "2026-10-19T10:41:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "db0dae9d-bf24-4ee5-a5fe-8c689601934c",
+   "name": "NW-IPH-2025",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "sawyer.hughes@northwind.example",
+   "last_sync": "2026-10-18T21:08:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "6a226c10-d339-4fa7-ad40-8d8209bf0cec",
+   "name": "NW-IPH-2034",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "kendall.foster@northwind.example",
+   "last_sync": "2026-10-27T04:42:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "3d45d0e4-58ad-4623-a75d-df615af5a176",
+   "name": "NW-IPH-2042",
+   "platform": "iOS",
+   "os_version": "18.1",
+   "user": "rowan.kim@northwind.example",
+   "last_sync": "2026-10-26T16:59:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "4ef5a6ea-7590-4da7-aa4c-c22af0f65fb3",
+   "name": "NW-IPH-2044",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "logan.patel@northwind.example",
+   "last_sync": "2026-10-22T02:35:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "6effa95c-1c0e-4764-a295-2597c7874832",
+   "name": "NW-IPH-2050",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "rowan.underwood@northwind.example",
+   "last_sync": "2026-10-18T23:58:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "e07020da-c640-4550-a9f9-21f1b35a949d",
+   "name": "NW-IPH-2058",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "harper.nguyen@northwind.example",
+   "last_sync": "2026-10-27T03:08:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "95feaf19-cf86-495a-a358-183ba00da01d",
+   "name": "NW-IPH-2061",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "jesse.young@northwind.example",
+   "last_sync": "2026-10-27T10:54:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "50b3ec23-ff44-4407-af46-142a83c55055",
+   "name": "NW-IPH-2070",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "avery.ito@northwind.example",
+   "last_sync": "2026-10-24T12:12:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "f8bcc78e-2b06-4538-a1cb-f670b853d5dd",
+   "name": "NW-IPH-2073",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "elliot.jensen@northwind.example",
+   "last_sync": "2026-10-19T00:25:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "20287902-9550-4692-a771-2fd1d3872f67",
+   "name": "NW-IPH-2078",
+   "platform": "iOS",
+   "os_version": "18.1",
+   "user": "riley.underwood@northwind.example",
+   "last_sync": "2026-10-25T19:35:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "94187b02-9f0f-4af4-a4bc-1c37aaf7aee4",
+   "name": "NW-IPH-2082",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "harper.torres@northwind.example",
+   "last_sync": "2026-10-27T12:32:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "fe0c3b31-8407-482e-a3df-1fc5b3ac3100",
+   "name": "NW-IPH-2090",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "devon.underwood@northwind.example",
+   "last_sync": "2026-10-25T00:31:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "a0ad07fd-0960-44b8-ae1f-dc5f04521a02",
+   "name": "NW-IPH-2098",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "casey.foster@northwind.example",
+   "last_sync": "2026-10-26T16:26:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "763d1390-095b-4d5b-a405-2ccb923f4c85",
+   "name": "NW-IPH-2101",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "taylor.foster@northwind.example",
+   "last_sync": "2026-10-23T19:27:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "b84def9f-9ea0-433a-a80e-a02595be5883",
+   "name": "NW-IPH-2106",
+   "platform": "iOS",
+   "os_version": "18.1",
+   "user": "finley.underwood@northwind.example",
+   "last_sync": "2026-10-27T11:35:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "460edc91-320a-4095-a866-9fc0a7542a3b",
+   "name": "NW-IPH-2115",
+   "platform": "iOS",
+   "os_version": "18.1",
+   "user": "blake.walsh@northwind.example",
+   "last_sync": "2026-10-21T22:17:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "b90b2410-d8cd-47fa-aa30-fb5eece60fef",
+   "name": "NW-IPH-2122",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "sawyer.garcia@northwind.example",
+   "last_sync": "2026-06-03T19:52:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "3d7e3449-eb58-4008-aa9d-339bccda1abd",
+   "name": "NW-IPH-2127",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "skyler.underwood@northwind.example",
+   "last_sync": "2026-10-25T10:49:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "b1a02456-fbb5-4a87-aeeb-323d0d2d15a3",
+   "name": "NW-IPH-2132",
+   "platform": "iOS",
+   "os_version": "18.1",
+   "user": "jamie.brooks@northwind.example",
+   "last_sync": "2026-10-19T12:49:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "bd52728a-6881-42f7-a992-0509fd9faeb2",
+   "name": "NW-IPH-2133",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "rowan.ito@northwind.example",
+   "last_sync": "2026-10-26T00:01:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "e49a9176-69c9-4f7a-a2e9-42cb4faea1c0",
+   "name": "NW-IPH-2141",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "jesse.silva@northwind.example",
+   "last_sync": "2026-10-25T02:08:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "8814b12f-cd50-403f-a9f7-82175f45168f",
+   "name": "NW-IPH-2148",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "morgan.zhang@northwind.example",
+   "last_sync": "2026-10-24T22:52:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "d0438486-24df-4945-a28d-23ccfd148fef",
+   "name": "NW-IPH-2155",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "sawyer.torres@northwind.example",
+   "last_sync": "2026-10-27T09:17:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "d889115d-4446-4563-a15c-0a8797650bfb",
+   "name": "NW-IPH-2158",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "emery.ellis@northwind.example",
+   "last_sync": "2026-10-27T06:22:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "d11a3ad1-17e6-46cd-a3d7-013593ce199c",
+   "name": "NW-IPH-2161",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "harper.vance@northwind.example",
+   "last_sync": "2026-10-22T10:58:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "1b19de33-04f7-4efd-abe7-43582e65632d",
+   "name": "NW-IPH-2163",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "alex.torres@northwind.example",
+   "last_sync": "2026-10-27T13:19:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "063836c3-e62f-4c9f-a40e-dc8ccd5dd94d",
+   "name": "NW-IPH-2170",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "drew.vance@northwind.example",
+   "last_sync": "2026-10-27T05:16:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "bf12bb3e-d9c9-4c75-ace9-c4f429c4879f",
+   "name": "NW-IPH-2171",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "drew.walsh@northwind.example",
+   "last_sync": "2026-10-25T04:34:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "f97a6abb-73c8-47f9-a014-c84577d94d49",
+   "name": "NW-IPH-2172",
+   "platform": "iOS",
+   "os_version": "18.1",
+   "user": "morgan.adams@northwind.example",
+   "last_sync": "2026-10-24T11:57:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "991c33b9-20c6-402c-ac54-fba97313b12b",
+   "name": "NW-IPH-2181",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "alex.adams@northwind.example",
+   "last_sync": "2026-10-25T12:03:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "d30f8dba-766d-43f8-ad8f-a8201bcdfc19",
+   "name": "NW-IPH-2186",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "elliot.young@northwind.example",
+   "last_sync": "2026-10-22T03:08:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "30bc2be9-73a1-47d1-a7d8-fbf3e98967cc",
+   "name": "NW-IPH-2194",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "jesse.ito@northwind.example",
+   "last_sync": "2026-10-23T23:38:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "e630c146-3dca-4245-ae6c-1709eb419ee3",
+   "name": "NW-IPH-2202",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "logan.torres@northwind.example",
+   "last_sync": "2026-10-27T01:49:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "80f5e26a-0f72-46b5-a171-8df43d1907d0",
+   "name": "NW-IPH-2209",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "logan.foster@northwind.example",
+   "last_sync": "2026-10-24T06:38:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "d399b487-44c2-497e-ae17-b0c007dc2c7c",
+   "name": "NW-IPH-2210",
+   "platform": "iOS",
+   "os_version": "18.1",
+   "user": "blake.young@northwind.example",
+   "last_sync": "2026-10-24T19:10:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "8c030fa4-e054-47dd-a356-78d9c3ce23be",
+   "name": "NW-IPH-2213",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "jamie.ito@northwind.example",
+   "last_sync": "2026-10-24T16:14:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "c448c0e7-13cd-4d7e-a159-4cdb309dcf31",
+   "name": "NW-IPH-2217",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "casey.kim@northwind.example",
+   "last_sync": "2026-10-27T13:29:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "7a6bffa0-f3ec-489c-a3bc-002e928ee27a",
+   "name": "NW-IPH-2225",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "sawyer.underwood@northwind.example",
+   "last_sync": "2026-10-22T08:05:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "e640d655-76e5-4e65-a0d6-3d276c43f79e",
+   "name": "NW-IPH-2227",
+   "platform": "iOS",
+   "os_version": "18.1",
+   "user": "blake.ramos@northwind.example",
+   "last_sync": "2026-10-22T04:59:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "fd72d5b5-48a5-40ca-a2d8-6f29303e8c1c",
+   "name": "NW-IPH-2231",
+   "platform": "iOS",
+   "os_version": "18.1",
+   "user": "quinn.chen@northwind.example",
+   "last_sync": "2026-10-26T21:54:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "e3317f9b-8208-49ef-ad41-0569ac0b150e",
+   "name": "NW-IPH-2236",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "reese.moreno@northwind.example",
+   "last_sync": "2026-10-24T23:08:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "b300d360-077b-4b8a-ac4b-93a4108a0d78",
+   "name": "NW-IPH-2240",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "rowan.walsh@northwind.example",
+   "last_sync": "2026-10-25T18:19:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "026c8f43-5309-4dcd-ac73-1c6383e57044",
+   "name": "NW-IPH-2249",
+   "platform": "iOS",
+   "os_version": "18.1",
+   "user": "morgan.nguyen@northwind.example",
+   "last_sync": "2026-06-20T22:15:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "6f834a4d-d508-472a-aa1b-5daeeaa0a19e",
+   "name": "NW-IPH-2256",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "alex.moreno@northwind.example",
+   "last_sync": "2026-10-25T08:01:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "12f270ea-8952-474f-ac6d-44c480407d7e",
+   "name": "NW-IPH-2258",
+   "platform": "iOS",
+   "os_version": "18.0.1",
+   "user": "taylor.kim@northwind.example",
+   "last_sync": "2026-10-22T10:14:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "822f08d0-5853-4c06-aa38-aec3239c1cd5",
+   "name": "NW-IPH-2259",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "avery.ramos@northwind.example",
+   "last_sync": "2026-10-24T19:25:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "1722ff4d-e22b-4d6d-a30b-112c1debc71f",
+   "name": "NW-IPH-2263",
+   "platform": "iOS",
+   "os_version": "18.1",
+   "user": "devon.ramos@northwind.example",
+   "last_sync": "2026-10-25T11:46:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "525663bc-6f49-4733-aff5-8d2c2ee394b9",
+   "name": "NW-IPH-2271",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "drew.nguyen@northwind.example",
+   "last_sync": "2026-10-26T06:16:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "a4e249f0-be9c-4c62-a817-6c1463219e21",
+   "name": "NW-IPH-2275",
+   "platform": "iOS",
+   "os_version": "17.6.1",
+   "user": "rowan.diaz@northwind.example",
+   "last_sync": "2026-10-22T12:45:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "c7786645-ef1f-4f05-a9ed-7388dda4eef7",
+   "name": "NW-AND-2277",
+   "platform": "Android",
+   "os_version": "15",
+   "user": "jamie.patel@northwind.example",
+   "last_sync": "2026-10-26T01:01:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "461fcff1-27cd-488e-a869-20272b4390bf",
+   "name": "NW-AND-2282",
+   "platform": "Android",
+   "os_version": "15",
+   "user": "kendall.ramos@northwind.example",
+   "last_sync": "2026-10-19T12:05:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "812aa69b-a64f-42c2-a164-d0c886134659",
+   "name": "NW-AND-2283",
+   "platform": "Android",
+   "os_version": "15",
+   "user": "jordan.kim@northwind.example",
+   "last_sync": "2026-10-26T01:50:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "5d30d16a-e151-4c62-aaef-5f85ca86a0db",
+   "name": "NW-AND-2286",
+   "platform": "Android",
+   "os_version": "15",
+   "user": "parker.silva@northwind.example",
+   "last_sync": "2026-10-25T01:19:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "27261877-408d-4c40-ad07-1f70bffc8285",
+   "name": "NW-AND-2288",
+   "platform": "Android",
+   "os_version": "14",
+   "user": "jamie.kim@northwind.example",
+   "last_sync": "2026-10-26T17:30:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "359adeb3-2861-40bc-a7df-c48379f784d2",
+   "name": "NW-AND-2291",
+   "platform": "Android",
+   "os_version": "14",
+   "user": "taylor.zhang@northwind.example",
+   "last_sync": "2026-10-26T22:10:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "94f1c083-3062-40ff-ae76-7c179e8863fa",
+   "name": "NW-AND-2294",
+   "platform": "Android",
+   "os_version": "13",
+   "user": "avery.zhang@northwind.example",
+   "last_sync": "2026-10-22T00:46:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "4bacf578-1b96-4f0d-a214-863b46a230fb",
+   "name": "NW-AND-2299",
+   "platform": "Android",
+   "os_version": "14",
+   "user": "taylor.diaz@northwind.example",
+   "last_sync": "2026-10-25T08:13:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "0e29c516-9736-409e-aabd-3eafbe7ee56b",
+   "name": "NW-AND-2302",
+   "platform": "Android",
+   "os_version": "14",
+   "user": "taylor.underwood@northwind.example",
+   "last_sync": "2026-10-25T01:53:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "1185cbf2-5664-4c0f-a801-6e247f0b8b83",
+   "name": "NW-AND-2309",
+   "platform": "Android",
+   "os_version": "14",
+   "user": "parker.ellis@northwind.example",
+   "last_sync": "2026-10-27T10:45:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "13f5bd52-f12a-4bf9-a34f-357e5da116ac",
+   "name": "NW-AND-2318",
+   "platform": "Android",
+   "os_version": "14",
+   "user": "jesse.hughes@northwind.example",
+   "last_sync": "2026-06-03T20:55:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "71e07bed-9025-4295-affa-ac5a8813821d",
+   "name": "NW-AND-2324",
+   "platform": "Android",
+   "os_version": "14",
+   "user": "elliot.walsh@northwind.example",
+   "last_sync": "2026-10-18T21:05:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "ed0606ac-a7c7-4c85-ae38-a373eea64f0a",
+   "name": "NW-AND-2328",
+   "platform": "Android",
+   "os_version": "15",
+   "user": "devon.walsh@northwind.example",
+   "last_sync": "2026-10-26T05:03:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "eb334955-6d41-455a-a5d0-24cbd834798a",
+   "name": "NW-AND-2331",
+   "platform": "Android",
+   "os_version": "15",
+   "user": "alex.garcia@northwind.example",
+   "last_sync": "2026-10-27T01:42:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "19cfbdf4-9404-4d36-a83c-19f883ad86b6",
+   "name": "NW-AND-2338",
+   "platform": "Android",
+   "os_version": "13",
+   "user": "avery.kim@northwind.example",
+   "last_sync": "2026-10-26T17:21:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "d749514b-6a2f-4461-a12d-5b8405eccd4d",
+   "name": "NW-AND-2347",
+   "platform": "Android",
+   "os_version": "13",
+   "user": "finley.young@northwind.example",
+   "last_sync": "2026-10-25T06:36:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "d998c3b8-6853-4cf7-ae24-e55815db013c",
+   "name": "NW-AND-2350",
+   "platform": "Android",
+   "os_version": "15",
+   "user": "avery.walsh@northwind.example",
+   "last_sync": "2026-10-26T20:21:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "7a28e7e9-8741-4002-a8fb-ce0a053bad1b",
+   "name": "NW-AND-2352",
+   "platform": "Android",
+   "os_version": "14",
+   "user": "kendall.kim@northwind.example",
+   "last_sync": "2026-10-25T02:19:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "2290f117-9eee-4c82-a57c-01d5fb667998",
+   "name": "NW-AND-2360",
+   "platform": "Android",
+   "os_version": "14",
+   "user": "casey.silva@northwind.example",
+   "last_sync": "2026-10-22T03:59:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "cbfaf193-34b5-4a4f-a1f5-b0c15381adf6",
+   "name": "NW-AND-2363",
+   "platform": "Android",
+   "os_version": "14",
+   "user": "morgan.brooks@northwind.example",
+   "last_sync": "2026-10-26T11:23:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "2b95e8d8-e6b3-4779-a081-e456d46efa75",
+   "name": "NW-AND-2368",
+   "platform": "Android",
+   "os_version": "14",
+   "user": "taylor.young@northwind.example",
+   "last_sync": "2026-10-21T17:04:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "68726689-36ea-4b5a-abda-b8b34732f393",
+   "name": "NW-AND-2369",
+   "platform": "Android",
+   "os_version": "14",
+   "user": "harper.ito@northwind.example",
+   "last_sync": "2026-10-26T02:20:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "157405da-4624-465b-a857-95269fae8339",
+   "name": "NW-AND-2373",
+   "platform": "Android",
+   "os_version": "13",
+   "user": "jordan.ito@northwind.example",
+   "last_sync": "2026-10-27T00:34:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "c8ebde67-c59d-460f-a2f3-20af6a27631f",
+   "name": "NW-AND-2382",
+   "platform": "Android",
+   "os_version": "14",
+   "user": "drew.brooks@northwind.example",
+   "last_sync": "2026-10-19T13:50:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "cbed28da-0264-47d3-ac22-627f0029a7fd",
+   "name": "NW-AND-2383",
+   "platform": "Android",
+   "os_version": "15",
+   "user": "harper.patel@northwind.example",
+   "last_sync": "2026-10-27T01:33:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "90f60495-42e9-4684-a410-ae15af7a8bed",
+   "name": "NW-AND-2390",
+   "platform": "Android",
+   "os_version": "14",
+   "user": "logan.garcia@northwind.example",
+   "last_sync": "2026-10-27T12:10:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "f1419c21-0c9e-4061-a92f-3df4de5d2a8e",
+   "name": "NW-AND-2397",
+   "platform": "Android",
+   "os_version": "14",
+   "user": "logan.nguyen@northwind.example",
+   "last_sync": "2026-10-24T07:52:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "00034f4d-da95-45fe-a1f0-4776183da12b",
+   "name": "NW-AND-2404",
+   "platform": "Android",
+   "os_version": "15",
+   "user": "kendall.torres@northwind.example",
+   "last_sync": "2026-08-21T20:05:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "1b9c25c6-4824-4bbc-adfd-33ad730f2838",
+   "name": "NW-AND-2412",
+   "platform": "Android",
+   "os_version": "13",
+   "user": "quinn.patel@northwind.example",
+   "last_sync": "2026-10-25T16:57:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "b041b2fe-efcb-4ec9-ad37-9c0a251608e7",
+   "name": "NW-AND-2413",
+   "platform": "Android",
+   "os_version": "15",
+   "user": "skyler.lopez@northwind.example",
+   "last_sync": "2026-10-22T02:27:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "16a25753-b03f-4b6c-a27a-d73a4349bd6c",
+   "name": "NW-AND-2414",
+   "platform": "Android",
+   "os_version": "15",
+   "user": "parker.zhang@northwind.example",
+   "last_sync": "2026-08-26T10:51:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "e8a69522-6435-4fe0-a1e7-22d21aa5e405",
+   "name": "NW-AND-2419",
+   "platform": "Android",
+   "os_version": "15",
+   "user": "morgan.moreno@northwind.example",
+   "last_sync": "2026-10-23T20:20:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "9d3828e0-2a3f-48f1-ae2f-b51da94c74d8",
+   "name": "NW-AND-2428",
+   "platform": "Android",
+   "os_version": "15",
+   "user": "logan.walsh@northwind.example",
+   "last_sync": "2026-10-24T01:42:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "e050b396-ad38-4bd7-a323-ce41b3e466be",
+   "name": "NW-AND-2436",
+   "platform": "Android",
+   "os_version": "13",
+   "user": "elliot.adams@northwind.example",
+   "last_sync": "0001-01-01T00:00:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "73c1ee9e-1ba3-483c-a119-45a6ba20618c",
+   "name": "NW-AND-2441",
+   "platform": "Android",
+   "os_version": "13",
+   "user": "elliot.hughes@northwind.example",
+   "last_sync": "2026-10-26T18:59:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "e6a7b81a-3d6c-4ce6-ae08-e910f8bace22",
+   "name": "NW-AND-2448",
+   "platform": "Android",
+   "os_version": "14",
+   "user": "emery.foster@northwind.example",
+   "last_sync": "2026-10-26T08:00:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "45a22751-e2cc-42e7-a36e-7073bd646a9f",
+   "name": "NW-AND-2454",
+   "platform": "Android",
+   "os_version": "13",
+   "user": "avery.jensen@northwind.example",
+   "last_sync": "2026-10-18T19:58:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "5bd1c2ff-d1ea-4cb7-a270-0549412cd6d5",
+   "name": "NW-AND-2456",
+   "platform": "Android",
+   "os_version": "14",
+   "user": "logan.silva@northwind.example",
+   "last_sync": "2026-10-26T04:27:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "67735e15-96bb-4466-a2df-4fd106d1287f",
+   "name": "NW-AND-2462",
+   "platform": "Android",
+   "os_version": "14",
+   "user": "devon.lopez@northwind.example",
+   "last_sync": "2026-10-21T19:21:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "0d056fe7-1943-4a45-abf8-b63fc23ac296",
+   "name": "NW-AND-2464",
+   "platform": "Android",
+   "os_version": "14",
+   "user": "riley.patel@northwind.example",
+   "last_sync": "2026-10-26T04:20:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "bd9b00a9-f0d4-4e7b-a858-3626e7d6d203",
+   "name": "NW-AND-2466",
+   "platform": "Android",
+   "os_version": "14",
+   "user": "taylor.torres@northwind.example",
+   "last_sync": "2026-10-27T01:16:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "ad78b6c5-243a-42da-aa67-c0203c566da9",
+   "name": "NW-AND-2473",
+   "platform": "Android",
+   "os_version": "14",
+   "user": "hayden.garcia@northwind.example",
+   "last_sync": "2026-10-19T09:43:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "e8e821e3-2b29-439f-a14e-086fd6c887ba",
+   "name": "NW-MAC-2475",
+   "platform": "macOS",
+   "os_version": "14.7",
+   "user": "riley.silva@northwind.example",
+   "last_sync": "2026-10-22T00:31:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "8a0398ed-68e8-4f94-a21d-7bb0e589f892",
+   "name": "NW-MAC-2481",
+   "platform": "macOS",
+   "os_version": "15.0.1",
+   "user": "reese.jensen@northwind.example",
+   "last_sync": "2026-10-27T05:46:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "d9555197-40aa-4124-a70c-433ee01af81f",
+   "name": "NW-MAC-2488",
+   "platform": "macOS",
+   "os_version": "15.0.1",
+   "user": "riley.adams@northwind.example",
+   "last_sync": "2026-10-26T03:52:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "875196a9-2e88-4e0a-a428-27d41ab681d3",
+   "name": "NW-MAC-2492",
+   "platform": "macOS",
+   "os_version": "14.7",
+   "user": "kendall.patel@northwind.example",
+   "last_sync": "2026-10-25T03:57:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "ec918865-7852-4b80-a6c1-a5a1d1b06b33",
+   "name": "NW-MAC-2493",
+   "platform": "macOS",
+   "os_version": "15.1",
+   "user": "sawyer.young@northwind.example",
+   "last_sync": "2026-10-26T12:24:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "d7eeff7f-59a4-43e8-a596-d32b8d0e9bb6",
+   "name": "NW-MAC-2497",
+   "platform": "macOS",
+   "os_version": "15.1",
+   "user": "alex.brooks@northwind.example",
+   "last_sync": "2026-10-24T09:48:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "9ef597cb-c06b-440e-aef4-b533cbc9896f",
+   "name": "NW-MAC-2498",
+   "platform": "macOS",
+   "os_version": "15.0.1",
+   "user": "elliot.lopez@northwind.example",
+   "last_sync": "2026-10-22T11:48:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "064dc9cb-2aba-4b28-a58a-b5e4225073d4",
+   "name": "NW-MAC-2503",
+   "platform": "macOS",
+   "os_version": "15.1",
+   "user": "devon.diaz@northwind.example",
+   "last_sync": "2026-10-27T10:04:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "f940dc92-ab8f-4fd2-a9ac-b2d2d40c8bc5",
+   "name": "NW-MAC-2509",
+   "platform": "macOS",
+   "os_version": "15.1",
+   "user": "jesse.brooks@northwind.example",
+   "last_sync": "2026-10-26T16:53:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "be3f8321-5633-4549-a20f-b041f4b87027",
+   "name": "NW-MAC-2512",
+   "platform": "macOS",
+   "os_version": "15.0.1",
+   "user": "jesse.moreno@northwind.example",
+   "last_sync": "2026-10-24T18:47:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "3555a6db-2b20-4457-acc6-7b70b8ea250e",
+   "name": "NW-MAC-2518",
+   "platform": "macOS",
+   "os_version": "15.0.1",
+   "user": "taylor.ellis@northwind.example",
+   "last_sync": "2026-10-25T03:08:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "5ae19dee-d342-469f-ab3f-435ba26325f4",
+   "name": "NW-MAC-2521",
+   "platform": "macOS",
+   "os_version": "14.7",
+   "user": "jamie.foster@northwind.example",
+   "last_sync": "2026-10-23T19:52:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "906680ff-b201-46bd-ada6-98588c804a5b",
+   "name": "NW-MAC-2526",
+   "platform": "macOS",
+   "os_version": "15.1",
+   "user": "rowan.ellis@northwind.example",
+   "last_sync": "2026-10-24T01:35:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "234d95b8-a9b1-43f5-a0b1-0d976daa41e8",
+   "name": "NW-MAC-2527",
+   "platform": "macOS",
+   "os_version": "15.1",
+   "user": "jesse.kim@northwind.example",
+   "last_sync": "2026-10-25T08:21:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "fdf0ef70-994f-4f7c-aa3d-68b312d11beb",
+   "name": "NW-MAC-2529",
+   "platform": "macOS",
+   "os_version": "15.1",
+   "user": "logan.moreno@northwind.example",
+   "last_sync": "2026-10-26T20:20:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "03126c6c-2550-41de-a59f-465c48a09d99",
+   "name": "NW-MAC-2537",
+   "platform": "macOS",
+   "os_version": "14.7",
+   "user": "avery.moreno@northwind.example",
+   "last_sync": "2026-10-25T19:58:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "286df9ba-04b3-4476-a200-439a84409bc4",
+   "name": "NW-MAC-2543",
+   "platform": "macOS",
+   "os_version": "15.1",
+   "user": "jesse.jensen@northwind.example",
+   "last_sync": "2026-10-26T09:53:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "3e95d3b8-58dd-4f54-ac2d-5bed3fa87617",
+   "name": "NW-MAC-2549",
+   "platform": "macOS",
+   "os_version": "15.1",
+   "user": "quinn.vance@northwind.example",
+   "last_sync": "2026-06-09T13:57:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "f7eb5c98-4773-489a-abd3-a6143ca4e436",
+   "name": "NW-MAC-2553",
+   "platform": "macOS",
+   "os_version": "15.0.1",
+   "user": "harper.kim@northwind.example",
+   "last_sync": "2026-10-26T17:36:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "f6ddc38b-571f-4ed9-a98d-669b9197348e",
+   "name": "NW-MAC-2562",
+   "platform": "macOS",
+   "os_version": "15.1",
+   "user": "reese.walsh@northwind.example",
+   "last_sync": "2026-08-01T03:51:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "adc98c56-39a2-4a04-a6ef-787944938137",
+   "name": "NW-MAC-2565",
+   "platform": "macOS",
+   "os_version": "15.0.1",
+   "user": "riley.young@northwind.example",
+   "last_sync": "2026-10-27T08:24:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "af0d1357-93ca-4b1b-a988-f81cb6e08863",
+   "name": "NW-MAC-2571",
+   "platform": "macOS",
+   "os_version": "15.1",
+   "user": "kendall.garcia@northwind.example",
+   "last_sync": "2026-10-19T11:17:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "2f9c43ac-8daa-4bb7-a8fb-aa61c21edae3",
+   "name": "NW-MAC-2579",
+   "platform": "macOS",
+   "os_version": "15.1",
+   "user": "sawyer.chen@northwind.example",
+   "last_sync": "2026-10-26T02:27:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "84573889-2ad5-4f80-a1f3-0e60ec0cca2f",
+   "name": "NW-MAC-2585",
+   "platform": "macOS",
+   "os_version": "15.1",
+   "user": "blake.brooks@northwind.example",
+   "last_sync": "2026-10-26T09:43:00Z",
+   "compliance_state": "noncompliant"
+  },
+  {
+   "id": "51513c20-673c-4ebe-a1ac-456856d76225",
+   "name": "NW-MAC-2587",
+   "platform": "macOS",
+   "os_version": "14.7",
+   "user": "finley.jensen@northwind.example",
+   "last_sync": "2026-10-27T12:16:00Z",
+   "compliance_state": "compliant"
+  },
+  {
+   "id": "d265ec68-375a-42ac-a0e7-e970e54525ad",
+   "name": "NW-MAC-2588",
+   "platform": "macOS",
+   "os_version": "15.0.1",
+   "user": "drew.kim@northwind.example",
+   "last_sync": "2026-10-21T18:43:00Z",
+   "compliance_state": "compliant"
+  }
+ ],
+ "setting_states": [
+  {
+   "device_id": "fd7dcd0f-71ad-4193-a39b-f51f0e80f555",
+   "setting": "CustomCompliance.LocalAdministratorsWithinLimit",
+   "setting_name": "LocalAdministratorsWithinLimit",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "55797d05-8998-49be-a8c7-9345c7f9cf0e",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "dc12dacd-f581-4742-ab32-85a0baef0178",
+   "setting": "CustomCompliance.LocalAdministratorsWithinLimit",
+   "setting_name": "LocalAdministratorsWithinLimit",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "2c2fc202-6ba3-4a21-adf9-ddcfe52afd11",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "08923e71-678a-408e-a4bd-5176221bc837",
+   "setting": "DefaultDeviceCompliancePolicy.RequireRemainContact",
+   "setting_name": "RequireRemainContact",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "a8b686b2-83e3-4a23-aecd-53d3cdc3bc3a",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "09e3bee4-a9cb-4803-a7a3-272325ab5143",
+   "setting": "DefaultDeviceCompliancePolicy.RequireRemainContact",
+   "setting_name": "RequireRemainContact",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "712cfc98-d27d-470f-a543-e2e5def606bb",
+   "setting": "CustomCompliance.ApprovedVpnClientInstalled",
+   "setting_name": "ApprovedVpnClientInstalled",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "e130bf42-a451-4814-aa60-ea0fc13f2846",
+   "setting": "Windows10CompliancePolicy.AntivirusRequired",
+   "setting_name": "AntivirusRequired",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Real-time protection is off"
+  },
+  {
+   "device_id": "9c7d68e6-e66f-4aae-afc5-744331f608eb",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "9c7d68e6-e66f-4aae-afc5-744331f608eb",
+   "setting": "Windows10CompliancePolicy.SecureBootEnabled",
+   "setting_name": "SecureBootEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "0d6646c0-192f-42a3-aa40-f83a097c8d31",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "d6fbcce0-3f91-44d5-a629-93a33d24845a",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "ac74d67d-7700-463c-af81-61234d1911a8",
+   "setting": "DefaultDeviceCompliancePolicy.RequireUserExistence",
+   "setting_name": "RequireUserExistence",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "9082a865-2007-44e7-a071-66a43fd3b49d",
+   "setting": "DefaultDeviceCompliancePolicy.RequireRemainContact",
+   "setting_name": "RequireRemainContact",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "6ee1b272-edce-45af-a404-ecc81372b88d",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "2a241844-80f7-45cb-a603-1f834572e94c",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "027665f2-5685-43ec-af31-b525b952a553",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "fdef2daa-534e-4bba-a2dc-3e3753873a8e",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "fdef2daa-534e-4bba-a2dc-3e3753873a8e",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "a2ec0c4b-1112-4f3f-a7e6-97b0a4a9db30",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "15edba0b-b642-4f71-abf3-74f24ec584c5",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "8d1351e1-534c-4e66-a305-d8ca27e4a698",
+   "setting": "DefaultDeviceCompliancePolicy.RequireUserExistence",
+   "setting_name": "RequireUserExistence",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "d6646b9d-c32f-4311-a228-fa23e1a6bd74",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "d6646b9d-c32f-4311-a228-fa23e1a6bd74",
+   "setting": "Windows10CompliancePolicy.SecureBootEnabled",
+   "setting_name": "SecureBootEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "06253a42-8cd1-4e2d-afdb-89559bfadb93",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "74f11ec8-5e15-468e-af13-9185b210f6e1",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "b714f156-9437-4632-a6b7-83902197be96",
+   "setting": "DefaultDeviceCompliancePolicy.RequireRemainContact",
+   "setting_name": "RequireRemainContact",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "63a53399-a34f-4bd0-ad41-86f5907b3f35",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "820c7507-6dc0-4e38-a11a-c9e93e3c5a81",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "3f86ad5d-d026-41c9-a41f-9063926e9388",
+   "setting": "DefaultDeviceCompliancePolicy.RequireRemainContact",
+   "setting_name": "RequireRemainContact",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "214be1d7-b33b-4c1e-abfe-239a747d0dbf",
+   "setting": "DefaultDeviceCompliancePolicy.RequireRemainContact",
+   "setting_name": "RequireRemainContact",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "96b1b946-0307-4ece-aa01-a1557f94a009",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "089d5987-1841-46b7-aa4e-1c723062dd27",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "089d5987-1841-46b7-aa4e-1c723062dd27",
+   "setting": "Windows10CompliancePolicy.SecureBootEnabled",
+   "setting_name": "SecureBootEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "6115169a-aff5-4155-a925-41c7a1f76ba4",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "89698f61-4c64-4740-a47e-15acd80276b9",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "a6058ea3-1978-4ac5-ad8f-a9295c507396",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "5da9bbe6-75f7-4784-af98-2f897235301b",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "3df23b5d-9a65-4088-a950-1d0a052b3d7f",
+   "setting": "DefaultDeviceCompliancePolicy.RequireRemainContact",
+   "setting_name": "RequireRemainContact",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "7e33424e-a4ba-439a-ab00-2f66b2a8285d",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "1662c433-db38-410b-a269-62b2c262c717",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "7c5387a3-6556-419e-af95-451023cb0d07",
+   "setting": "CustomCompliance.ApprovedVpnClientInstalled",
+   "setting_name": "ApprovedVpnClientInstalled",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "8054890c-389e-4672-a38c-c615900d7a22",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "3f3b00fc-41ac-41d6-aba0-d5f29c9419f1",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "41d9dfc1-559c-4356-a9f4-5d865278d44b",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "7d72a0ab-80f4-477c-a646-92a6f7796984",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "7d72a0ab-80f4-477c-a646-92a6f7796984",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "71f63200-9d28-47f7-a397-e7275dfaded2",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "e96f5738-c13f-41ff-a01f-4cb5fc02a48f",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "e96f5738-c13f-41ff-a01f-4cb5fc02a48f",
+   "setting": "CustomCompliance.ApprovedVpnClientInstalled",
+   "setting_name": "ApprovedVpnClientInstalled",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "4b7a95b5-be9f-456e-a87d-351392acca89",
+   "setting": "Windows10CompliancePolicy.AntivirusRequired",
+   "setting_name": "AntivirusRequired",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Real-time protection is off"
+  },
+  {
+   "device_id": "e1a57d3b-abd7-4a89-aa25-62f26e1ac6b4",
+   "setting": "CustomCompliance.ApprovedVpnClientInstalled",
+   "setting_name": "ApprovedVpnClientInstalled",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "dfc28fa9-4811-43c6-a573-1f8eb88edf92",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "c1f2c18b-89bd-4d7c-a79e-3cbccc85ab1b",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "a88de1be-3f0c-4271-a63b-b1b41ccdbc9d",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "d00eb8a1-2a01-4acb-a6b8-77f2defd0a7e",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "beb5913e-1fb8-4dd5-aef5-ba4e919fb696",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "9170a860-4bfa-4e66-a7a1-3c79dbf4fe9f",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "37c28651-c8e7-4743-a7d5-bdd64dc0e095",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "37c28651-c8e7-4743-a7d5-bdd64dc0e095",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "7c28f8d4-97a6-428d-a8a9-2873d1e27978",
+   "setting": "DefaultDeviceCompliancePolicy.RequireRemainContact",
+   "setting_name": "RequireRemainContact",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "81d83863-186d-4c4a-a51b-7e98e8464a34",
+   "setting": "DefaultDeviceCompliancePolicy.RequireDeviceCompliancePolicyAssigned",
+   "setting_name": "RequireDeviceCompliancePolicyAssigned",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "381c5474-b808-424a-affd-21bc1a8f1484",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "f599cef7-5ca2-41ec-ad8b-eacf72672eb3",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "78dcc26f-18dc-4fc0-a7c2-6b5323332c12",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "78dcc26f-18dc-4fc0-a7c2-6b5323332c12",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "9447138f-5f96-40dd-a1db-527d9acaf7e8",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "9447138f-5f96-40dd-a1db-527d9acaf7e8",
+   "setting": "Windows10CompliancePolicy.AntivirusRequired",
+   "setting_name": "AntivirusRequired",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Real-time protection is off"
+  },
+  {
+   "device_id": "48462f73-1374-423f-aeb7-da57c525913e",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "48462f73-1374-423f-aeb7-da57c525913e",
+   "setting": "CustomCompliance.ApprovedVpnClientInstalled",
+   "setting_name": "ApprovedVpnClientInstalled",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "4d03ce76-d196-469e-a104-f5410523ca48",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "e79cb8dd-e439-46f0-a59f-ab339d6b3e89",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "50f1e803-670e-4600-aaaa-acabadcfa0de",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "50f1e803-670e-4600-aaaa-acabadcfa0de",
+   "setting": "Windows10CompliancePolicy.AntivirusRequired",
+   "setting_name": "AntivirusRequired",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Real-time protection is off"
+  },
+  {
+   "device_id": "f69c602c-5634-4303-a1f0-659070f04226",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "5b3d52bb-9b6e-44f4-ada0-2a7a7d6d7793",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "0d40db2c-acf4-4708-adab-22a5991b1e5a",
+   "setting": "Windows10CompliancePolicy.DeviceThreatProtectionRequiredSecurityLevel",
+   "setting_name": "DeviceThreatProtectionRequiredSecurityLevel",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "aa4d9595-e006-4a4b-ab21-39f4fb4d589f",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "aa4d9595-e006-4a4b-ab21-39f4fb4d589f",
+   "setting": "Windows10CompliancePolicy.SecureBootEnabled",
+   "setting_name": "SecureBootEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "e41f6289-1b7d-4d86-ab59-c13eda693f7b",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "35dfb2f4-76a6-40ef-ac71-107ada2c6ca4",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "eaf54a60-5b11-4041-a065-3c8d1f7930f7",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "9e8fc8cc-97ab-4998-a991-a7780c7f959d",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "a216bdb8-c8fe-46e7-a863-501c0b97c455",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "62e86517-913a-42ed-a7fb-10d6bf838e57",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "304b646e-b7fd-4f22-a807-d3b284c37ee4",
+   "setting": "Windows10CompliancePolicy.DeviceThreatProtectionRequiredSecurityLevel",
+   "setting_name": "DeviceThreatProtectionRequiredSecurityLevel",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "a9aca7cc-d043-48a3-aed9-417f20575c12",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "41cf0c16-c5a8-4227-a04d-2bb7278e6c67",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "d5a267f4-5117-475b-a77c-4c7f34aabf0e",
+   "setting": "DefaultDeviceCompliancePolicy.RequireDeviceCompliancePolicyAssigned",
+   "setting_name": "RequireDeviceCompliancePolicyAssigned",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "c8771e1b-d7a0-4827-a8a9-f1151ec14a4b",
+   "setting": "DefaultDeviceCompliancePolicy.RequireDeviceCompliancePolicyAssigned",
+   "setting_name": "RequireDeviceCompliancePolicyAssigned",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "6b00dedf-d529-4b00-a0d9-5e5acca312f4",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "96ef4d30-836a-454d-a9e4-b928a6d41243",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "96ef4d30-836a-454d-a9e4-b928a6d41243",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "2af39b13-082f-4331-a597-42212fd1efc0",
+   "setting": "DefaultDeviceCompliancePolicy.RequireRemainContact",
+   "setting_name": "RequireRemainContact",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "eaa6f9ea-7969-4059-a42f-63de619b8059",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "1e1ae462-af98-4200-aff2-d43bbff13af1",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "5433bdcd-22f6-4f58-a103-6a32326ac293",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "1055e6c8-479c-4116-ae1c-87adba345ff4",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "68349ba2-5415-450a-aa95-8ef1367e2932",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "90c27a15-1756-4dd3-ab2f-84a80affa296",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "90c27a15-1756-4dd3-ab2f-84a80affa296",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "946e10da-9df4-4289-a001-d6cccbbab97a",
+   "setting": "Windows10CompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "Windows10",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "0145b703-4d52-4cc3-ada8-a57136f552dc",
+   "setting": "DefaultDeviceCompliancePolicy.RequireRemainContact",
+   "setting_name": "RequireRemainContact",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "4d4940d8-0b3f-4725-a7a8-847f3efe7639",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "c08f9ce5-f671-4677-a1a4-4c0620e47986",
+   "setting": "Windows10CompliancePolicy.BitLockerEnabled",
+   "setting_name": "BitLockerEnabled",
+   "platform": "Windows10",
+   "state": "nonCompliant",
+   "error": "Encryption is not enabled on the OS drive"
+  },
+  {
+   "device_id": "4864d710-982e-4ecc-aff4-1095e009390f",
+   "setting": "DefaultDeviceCompliancePolicy.RequireDeviceCompliancePolicyAssigned",
+   "setting_name": "RequireDeviceCompliancePolicyAssigned",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "74adc22f-f414-4398-a8d7-b2c683d3b662",
+   "setting": "IosCompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "iOS",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "31923b2e-5c84-446b-a384-73a5c8361107",
+   "setting": "DefaultDeviceCompliancePolicy.RequireDeviceCompliancePolicyAssigned",
+   "setting_name": "RequireDeviceCompliancePolicyAssigned",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "5bea2f36-4b0a-4f86-a1d7-e9b785621202",
+   "setting": "DefaultDeviceCompliancePolicy.RequireRemainContact",
+   "setting_name": "RequireRemainContact",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "6effa95c-1c0e-4764-a295-2597c7874832",
+   "setting": "IosCompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "iOS",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "460edc91-320a-4095-a866-9fc0a7542a3b",
+   "setting": "IosCompliancePolicy.PasscodeRequired",
+   "setting_name": "PasscodeRequired",
+   "platform": "iOS",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "b90b2410-d8cd-47fa-aa30-fb5eece60fef",
+   "setting": "DefaultDeviceCompliancePolicy.RequireRemainContact",
+   "setting_name": "RequireRemainContact",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "991c33b9-20c6-402c-ac54-fba97313b12b",
+   "setting": "IosCompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "iOS",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "80f5e26a-0f72-46b5-a171-8df43d1907d0",
+   "setting": "IosCompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "iOS",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "026c8f43-5309-4dcd-ac73-1c6383e57044",
+   "setting": "DefaultDeviceCompliancePolicy.RequireRemainContact",
+   "setting_name": "RequireRemainContact",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "6f834a4d-d508-472a-aa1b-5daeeaa0a19e",
+   "setting": "IosCompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "iOS",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "525663bc-6f49-4733-aff5-8d2c2ee394b9",
+   "setting": "IosCompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "iOS",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "525663bc-6f49-4733-aff5-8d2c2ee394b9",
+   "setting": "IosCompliancePolicy.PasscodeRequired",
+   "setting_name": "PasscodeRequired",
+   "platform": "iOS",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "a4e249f0-be9c-4c62-a817-6c1463219e21",
+   "setting": "IosCompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "iOS",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "5d30d16a-e151-4c62-aaef-5f85ca86a0db",
+   "setting": "AndroidWorkProfileCompliancePolicy.PasswordRequired",
+   "setting_name": "PasswordRequired",
+   "platform": "AndroidWorkProfile",
+   "state": "error"
+  },
+  {
+   "device_id": "13f5bd52-f12a-4bf9-a34f-357e5da116ac",
+   "setting": "DefaultDeviceCompliancePolicy.RequireRemainContact",
+   "setting_name": "RequireRemainContact",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "d998c3b8-6853-4cf7-ae24-e55815db013c",
+   "setting": "AndroidWorkProfileCompliancePolicy.MinAndroidSecurityPatchLevel",
+   "setting_name": "MinAndroidSecurityPatchLevel",
+   "platform": "AndroidWorkProfile",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "f1419c21-0c9e-4061-a92f-3df4de5d2a8e",
+   "setting": "AndroidWorkProfileCompliancePolicy.MinAndroidSecurityPatchLevel",
+   "setting_name": "MinAndroidSecurityPatchLevel",
+   "platform": "AndroidWorkProfile",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "00034f4d-da95-45fe-a1f0-4776183da12b",
+   "setting": "DefaultDeviceCompliancePolicy.RequireRemainContact",
+   "setting_name": "RequireRemainContact",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "16a25753-b03f-4b6c-a27a-d73a4349bd6c",
+   "setting": "DefaultDeviceCompliancePolicy.RequireRemainContact",
+   "setting_name": "RequireRemainContact",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "9d3828e0-2a3f-48f1-ae2f-b51da94c74d8",
+   "setting": "AndroidWorkProfileCompliancePolicy.PasswordRequired",
+   "setting_name": "PasswordRequired",
+   "platform": "AndroidWorkProfile",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "e050b396-ad38-4bd7-a323-ce41b3e466be",
+   "setting": "DefaultDeviceCompliancePolicy.RequireDeviceCompliancePolicyAssigned",
+   "setting_name": "RequireDeviceCompliancePolicyAssigned",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "e6a7b81a-3d6c-4ce6-ae08-e910f8bace22",
+   "setting": "AndroidWorkProfileCompliancePolicy.PasswordRequired",
+   "setting_name": "PasswordRequired",
+   "platform": "AndroidWorkProfile",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "875196a9-2e88-4e0a-a428-27d41ab681d3",
+   "setting": "MacOSCompliancePolicy.StorageRequireEncryption",
+   "setting_name": "StorageRequireEncryption",
+   "platform": "macOS",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "fdf0ef70-994f-4f7c-aa3d-68b312d11beb",
+   "setting": "MacOSCompliancePolicy.StorageRequireEncryption",
+   "setting_name": "StorageRequireEncryption",
+   "platform": "macOS",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "03126c6c-2550-41de-a59f-465c48a09d99",
+   "setting": "MacOSCompliancePolicy.StorageRequireEncryption",
+   "setting_name": "StorageRequireEncryption",
+   "platform": "macOS",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "286df9ba-04b3-4476-a200-439a84409bc4",
+   "setting": "MacOSCompliancePolicy.StorageRequireEncryption",
+   "setting_name": "StorageRequireEncryption",
+   "platform": "macOS",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "286df9ba-04b3-4476-a200-439a84409bc4",
+   "setting": "MacOSCompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "macOS",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "3e95d3b8-58dd-4f54-ac2d-5bed3fa87617",
+   "setting": "DefaultDeviceCompliancePolicy.RequireRemainContact",
+   "setting_name": "RequireRemainContact",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "f6ddc38b-571f-4ed9-a98d-669b9197348e",
+   "setting": "DefaultDeviceCompliancePolicy.RequireRemainContact",
+   "setting_name": "RequireRemainContact",
+   "platform": "All",
+   "state": "nonCompliant"
+  },
+  {
+   "device_id": "84573889-2ad5-4f80-a1f3-0e60ec0cca2f",
+   "setting": "MacOSCompliancePolicy.OsMinimumVersion",
+   "setting_name": "OsMinimumVersion",
+   "platform": "macOS",
+   "state": "nonCompliant"
+  }
+ ]
+}

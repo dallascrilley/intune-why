@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>intune-why · compliance fix plan</title>
+<style>
+:root{--bg:#eef1f5;--panel:#fff;--soft:#f6f8fb;--ink:#17212c;--muted:#66768a;--faint:#98a5b4;--line:#e3e8ef;--accent:#2457d6;--accent-soft:#e8eefc;--good:#1d8a66;--good-soft:#e5f4ee;--gain:#3b74f2;--warn:#a5651a;--chip:#eef2f7}
+@media (prefers-color-scheme:dark){:root{--bg:#0f141a;--panel:#151b23;--soft:#1a222c;--ink:#e6ebf1;--muted:#9aa8b8;--faint:#6f7f91;--line:#26303c;--accent:#6c97ff;--accent-soft:#1d2a45;--good:#43c597;--good-soft:#173328;--gain:#6c97ff;--warn:#e0a35a;--chip:#212a35}}
+*{box-sizing:border-box}html,body{margin:0}body{background:var(--bg);color:var(--ink);font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif}
+.wrap{max-width:1320px;margin:0 auto;padding:22px 26px 34px}
+.bar{display:flex;align-items:center;gap:12px;margin-bottom:18px}.logo{display:flex;align-items:center;gap:9px;font-weight:760;font-size:16px;letter-spacing:-.3px}.mark{width:26px;height:26px;border-radius:7px;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:800;font-size:15px}
+.meta{color:var(--muted);font-size:12.5px}.pill{margin-left:auto;font-size:11px;font-weight:700;letter-spacing:.3px;color:var(--muted);background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:5px 10px}
+.hero{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 26px;display:grid;grid-template-columns:minmax(260px,1fr) minmax(300px,1fr);gap:26px;align-items:center}
+.eyebrow{font-size:10.5px;font-weight:800;letter-spacing:1.3px;color:var(--faint);text-transform:uppercase}
+.big{display:flex;align-items:baseline;gap:12px;margin-top:4px}.big b{font-size:52px;letter-spacing:-2.2px;font-weight:780;font-variant-numeric:tabular-nums}.big span{color:var(--muted);font-size:13px}
+.gain{color:var(--gain);font-weight:750;font-size:14px;opacity:0;transition:opacity .3s}.gain.on{opacity:1}
+.track{position:relative;height:12px;border-radius:7px;background:var(--chip);overflow:hidden;margin-top:12px}.seg{position:absolute;top:0;bottom:0;transition:width .55s cubic-bezier(.2,.8,.2,1),left .55s cubic-bezier(.2,.8,.2,1)}.now{left:0;background:var(--good)}.proj{background:var(--gain)}
+.legend{display:flex;gap:16px;margin-top:9px;font-size:11.5px;color:var(--muted)}.legend i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:6px;vertical-align:0}
+.pitch h1{font-size:23px;letter-spacing:-.7px;line-height:1.25;margin:0 0 6px;font-weight:740}.pitch p{margin:0 0 15px;color:var(--muted)}
+.actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.btn{font:inherit;font-weight:700;border-radius:9px;padding:10px 15px;cursor:pointer;border:1px solid var(--line);background:var(--panel);color:var(--ink)}.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 2px 6px #2457d633}.btn.primary:hover{filter:brightness(1.07)}.btn:focus-visible,.row:focus-visible,.toggle:focus-visible{outline:3px solid #8fb0ff;outline-offset:2px}
+.grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(330px,.85fr);gap:16px;margin-top:16px;align-items:start}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}.card-head{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line);font-weight:750}.card-head small{font-weight:500;color:var(--faint);font-size:11.5px}
+.row{display:grid;grid-template-columns:34px 26px minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 18px;border-bottom:1px solid var(--line);cursor:pointer;transition:background .2s}.row:last-child{border-bottom:0}.row:hover{background:var(--soft)}.row.selected{background:var(--accent-soft);box-shadow:inset 3px 0 var(--accent)}
+.toggle{width:30px;height:30px;border-radius:8px;border:1.5px solid var(--line);background:var(--panel);display:grid;place-items:center;cursor:pointer;color:transparent;font-size:15px;font-weight:900;transition:all .25s}.row.fixed .toggle{background:var(--good);border-color:var(--good);color:#fff;transform:scale(1.04)}
+.rank{color:var(--faint);font-weight:750;font-variant-numeric:tabular-nums;text-align:right}.title{font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.row.fixed .title{color:var(--muted)}.sub{font-size:12px;color:var(--muted);margin-top:2px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.chip{font-size:10.5px;font-weight:700;border-radius:20px;padding:2px 8px;background:var(--chip);color:var(--muted);white-space:nowrap}.chip.jev{background:var(--accent-soft);color:var(--accent)}
+.clears{text-align:right;min-width:74px}.clears b{display:block;font-size:19px;letter-spacing:-.5px;font-variant-numeric:tabular-nums}.clears span{font-size:10.5px;color:var(--faint);font-weight:700;text-transform:uppercase;letter-spacing:.6px}
+.detail{padding:18px 20px}.detail h2{margin:6px 0 4px;font-size:20px;letter-spacing:-.5px}.mono{font:12px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--muted);word-break:break-all}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:10px;margin:14px 0}.stats div{padding:10px 12px;border-right:1px solid var(--line)}.stats div:last-child{border-right:0}.stats b{display:block;font-size:18px;font-variant-numeric:tabular-nums}.stats span{font-size:10.5px;color:var(--faint);font-weight:700}
+.decision{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:11px 13px;margin-bottom:12px;font-size:12.5px}.decision b{display:block;margin-bottom:3px}.decision .why{color:var(--muted)}
+.next{font-size:13px;margin:0 0 14px}.next b{display:block;font-size:10.5px;letter-spacing:1.2px;color:var(--faint);text-transform:uppercase;margin-bottom:3px}
+table{width:100%;border-collapse:collapse;font-size:12px}th{text-align:left;color:var(--faint);font-size:10.5px;letter-spacing:.6px;text-transform:uppercase;padding:6px 6px 6px 0;border-bottom:1px solid var(--line)}td{padding:7px 6px 7px 0;border-bottom:1px solid var(--line);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:150px}.stale{color:var(--warn);font-weight:700}
+.more{color:var(--muted);font-size:12px;margin:9px 0 12px}.empty{padding:28px 20px;color:var(--muted)}
+.foot{margin-top:14px;color:var(--faint);font-size:11.5px;line-height:1.6}
+.flash{animation:flash .7s}@keyframes flash{from{background:var(--good-soft)}to{background:transparent}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media (max-width:900px){.hero,.grid{grid-template-columns:1fr}.wrap{padding:14px}.big b{font-size:42px}}
+@media (max-width:520px){.row{grid-template-columns:30px minmax(0,1fr) auto}.rank{display:none}.title{white-space:normal}.card-head small{display:none}.bar{flex-wrap:wrap}.logo{white-space:nowrap}.meta{flex-basis:100%}.stats{grid-template-columns:repeat(2,1fr)}.stats div:nth-child(2){border-right:0}.stats div:nth-child(-n+2){border-bottom:1px solid var(--line)}.pill{display:none}}
+</style></head><body><div class="wrap">
+<div class="bar"><div class="logo"><span class="mark">?</span>intune-why</div><div class="meta" id="meta"></div><div class="pill" id="pill"></div></div>
+<section class="hero">
+  <div>
+    <div class="eyebrow">Compliant devices</div>
+    <div class="big"><b id="pct">0%</b><span id="count"></span><span class="gain" id="gain"></span></div>
+    <div class="track" aria-hidden="true"><div class="seg now" id="segNow"></div><div class="seg proj" id="segProj"></div></div>
+    <div class="legend"><span><i style="background:var(--good)"></i>Compliant now</span><span><i style="background:var(--gain)"></i>After selected fixes</span></div>
+  </div>
+  <div class="pitch">
+    <h1 id="headline"></h1>
+    <p id="subline"></p>
+    <div class="actions"><button class="btn primary" id="simulate" type="button">Simulate top 3 fixes</button><button class="btn" id="reset" type="button">Reset</button></div>
+  </div>
+</section>
+<div class="grid">
+  <section class="card" aria-label="Fix plan"><div class="card-head">Fix plan <small>Ordered by devices each fix makes fully compliant</small></div><div id="plan"></div></section>
+  <section class="card" aria-label="Evidence"><div class="detail" id="detail"><div class="eyebrow">Evidence</div><h2>Choose a root cause</h2><p class="more">See which devices fail it, how it was classified and what to do next.</p></div></section>
+</div>
+<div class="foot" id="foot"></div>
+</div>
+<script>
+const R=__REPORT_DATA__;
+const $=id=>document.getElementById(id);
+const el=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e};
+const T=R.totals, causes=R.causes, byId=Object.fromEntries(causes.map(c=>[c.id,c]));
+const pct=(a,b)=>b?Math.round(100*a/b):0;
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const fixed=new Set(); let shown=pct(T.compliant,T.devices), selected=null, timer=null;
+$('meta').textContent='Snapshot '+String(R.collected_at).slice(0,10)+' · '+T.devices+' managed devices';
+$('pill').textContent=R.source==='demo'?'SAMPLE DATA':R.redacted?'REDACTED':'LIVE SNAPSHOT';
+const steps=R.plan.slice(0,3), cleared3=steps.length?steps[steps.length-1].cumulative_cleared:0;
+$('headline').textContent=steps.length?(steps.length+(steps.length===1?' fix raises':' fixes raise')+' compliance from '+pct(T.compliant,T.devices)+'% to '+pct(T.compliant+cleared3,T.devices)+'%.'):'No noncompliant devices with setting detail.';
+$('subline').textContent=T.needs_attention+' devices fail '+causes.length+' compliance settings. A fix counts a device only when nothing else on it still fails.';
+$('simulate').textContent='Simulate top '+steps.length+' fixes';
+function animateTo(target){const start=shown, t0=performance.now(), dur=reduce?0:550;function frame(t){const k=dur?Math.min(1,(t-t0)/dur):1;const v=Math.round(start+(target-start)*(1-Math.pow(1-k,3)));$('pct').textContent=v+'%';if(k<1)requestAnimationFrame(frame);else shown=target}requestAnimationFrame(frame)}
+function projected(){let ok=0;for(const d of Object.values(R.devices)){if(d.causes.length&&d.causes.every(c=>fixed.has(c)))ok++}return ok}
+function update(){const gain=projected(), now=T.compliant;const nowW=100*now/Math.max(T.devices,1), gainW=100*gain/Math.max(T.devices,1);$('segNow').style.width=nowW+'%';$('segProj').style.left=nowW+'%';$('segProj').style.width=gainW+'%';$('count').textContent=(now+gain)+' of '+T.devices;const g=$('gain');g.textContent=gain?'+'+gain+' devices':'';g.classList.toggle('on',gain>0);animateTo(pct(now+gain,T.devices));document.querySelectorAll('.row').forEach(r=>{const on=fixed.has(r.dataset.id);r.classList.toggle('fixed',on);r.querySelector('.toggle').setAttribute('aria-pressed',String(on))})}
+function decisionChip(c){const d=c.decision||{};if(String(d.decided_by).startsWith('jev'))return el('span','chip jev','Jev '+Number(d.confidence).toFixed(2));if(d.decided_by==='rule')return el('span','chip','Rule');return el('span','chip','Unclassified')}
+function renderPlan(){const box=$('plan');box.replaceChildren();if(!R.plan.length){box.append(el('div','empty','Nothing to fix in this snapshot.'));return}
+R.plan.forEach((s,i)=>{const c=byId[s.cause];const row=el('div','row');row.dataset.id=c.id;row.tabIndex=0;row.setAttribute('role','button');row.setAttribute('aria-label','Show evidence for '+c.title);
+const tog=el('button','toggle','✓');tog.type='button';tog.title='Mark as fixed';tog.setAttribute('aria-label','Mark '+c.title+' as fixed');tog.setAttribute('aria-pressed','false');tog.addEventListener('click',e=>{e.stopPropagation();fixed.has(c.id)?fixed.delete(c.id):fixed.add(c.id);update()});
+const body=el('div');body.append(el('div','title',c.title));const sub=el('div','sub');sub.append(el('span',null,Object.keys(c.platforms).join(', ')+' · '+c.affected+' devices'),el('span','chip',c.category_label),decisionChip(c));body.append(sub);
+const cl=el('div','clears');cl.append(el('b',null,'+'+s.newly_cleared),el('span',null,'clears'));
+row.append(tog,el('div','rank',String(i+1)),body,cl);row.addEventListener('click',()=>select(c.id));row.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(c.id)}});box.append(row)})}
+function select(id){selected=id;if(matchMedia('(max-width:900px)').matches)setTimeout(()=>$('detail').scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'}),0);document.querySelectorAll('.row').forEach(r=>r.classList.toggle('selected',r.dataset.id===id));const c=byId[id], d=$('detail');d.replaceChildren();d.classList.remove('flash');void d.offsetWidth;if(!reduce)d.classList.add('flash');
+d.append(el('div','eyebrow','Root cause #'+c.plan_rank),el('h2',null,c.title),el('div','mono',c.setting));
+const st=el('div','stats');[[c.affected,'DEVICES'],[c.clears_alone,'ONLY THIS FAILS'],[c.users,'USERS'],[c.not_recently_synced,'NO SYNC '+R.stale_days+'D']].forEach(([v,l])=>{const x=el('div');x.append(el('b',null,String(v)),el('span',null,l));st.append(x)});d.append(st);
+const dec=el('div','decision');const info=c.decision||{};if(String(info.decided_by).startsWith('jev')){dec.append(el('b',null,(info.decided_by==='jev'?c.category_label:'Review')+' · decided by Jev'),el('div','why','Model '+info.model+' chose "'+String(info.proposed).replace(/_/g,' ')+'" with confidence '+Number(info.confidence).toFixed(2)+(info.decided_by==='jev'?'.':', below the 0.60 floor, so it needs review.')+' Jev saw the setting name and counts only.'))}else if(info.decided_by==='rule'){dec.append(el('b',null,c.category_label+' · built-in rule'),el('div','why','Matched a standard Intune compliance setting.'))}else{dec.append(el('b',null,'Review · unclassified'),el('div','why','No built-in rule matches this setting. Run with --decide jev to classify custom settings.'))}d.append(dec);
+const nx=el('p','next');nx.append(el('b',null,'Next step'),document.createTextNode(c.next_step));d.append(nx);
+if(c.top_errors&&c.top_errors.length){const er=el('p','more','Reported errors: '+c.top_errors.join(' · '));d.append(er)}
+const tbl=el('table');const hr=el('tr');['Device','Platform','Last sync','Also failing'].forEach(h=>hr.append(el('th',null,h)));tbl.append(hr);
+c.devices.slice(0,6).forEach(id2=>{const v=R.devices[id2];const tr=el('tr');const sync=el('td',v.stale?'stale':null,v.last_sync?String(v.last_sync).slice(0,10):'never');tr.append(el('td',null,v.name),el('td',null,v.platform),sync,el('td',null,String(v.causes.length-1)));tbl.append(tr)});d.append(tbl);
+if(c.devices.length>6)d.append(el('div','more','+'+(c.devices.length-6)+' more devices in the CSV'));
+const dl=el('button','btn','Download device list (CSV)');dl.type='button';dl.addEventListener('click',()=>download(c));d.append(dl)}
+function csvCell(v){v=String(v==null?'':v);if(/^[=+\-@\t\r]/.test(v))v="'"+v;return '"'+v.replace(/"/g,'""')+'"'}
+function download(c){const rows=[['device','platform','user','last_sync','setting','also_failing']];c.devices.forEach(i=>{const v=R.devices[i];rows.push([v.name,v.platform,v.user,v.last_sync,c.setting,v.causes.length-1])});const blob=new Blob([rows.map(r=>r.map(csvCell).join(',')).join('\r\n')],{type:'text/csv'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='intune-why-'+c.title.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')+'.csv';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+$('simulate').addEventListener('click',()=>{clearTimeout(timer);fixed.clear();update();let i=0;const next=()=>{if(i>=steps.length)return;fixed.add(steps[i].cause);update();i++;timer=setTimeout(next,reduce?0:520)};timer=setTimeout(next,reduce?0:120)});
+$('reset').addEventListener('click',()=>{clearTimeout(timer);fixed.clear();update()});
+const notes=['Read-only snapshot. "Clears" counts devices that become fully compliant at that step, assuming the fix resolves the setting on each affected device.'];
+if(T.unexplained)notes.push(T.unexplained+' noncompliant devices reported no failing setting detail and are not in the plan.');
+if(T.unmatched_setting_states)notes.push(T.unmatched_setting_states+' failing setting states referenced devices missing from the device list.');
+if(R.source==='demo')notes.push('Sample data: a fictional 320-device tenant.');
+$('foot').textContent=notes.join(' ');
+renderPlan();update();
+</script></body></html>

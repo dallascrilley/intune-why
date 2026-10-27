@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+/tmp/
+# Real tenant data never belongs in the repository.
+intune-snapshot*.json
+intune-why-*.html
+*.csv
+
+# Published assets (override global ignores)
+!docs/demo.gif
+!docs/evidence/*.jsonl
