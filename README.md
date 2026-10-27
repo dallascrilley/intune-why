@@ -82,7 +82,7 @@ Without a key, custom settings appear as *Review* and everything else works the 
 
 ## Status
 
-Version 0.1. The analysis, report and Graph client are covered by tests built on Microsoft's documented v1.0 response shapes, and the demo runs in CI on Python 3.9 and 3.13. The live collector follows the documented endpoints but has not yet been exercised across a broad range of production tenants. If you run it on yours, an issue with a `--redact`ed report, or just a note that it worked, is the most useful contribution you can make.
+Version 0.1. The analysis, report and Graph client are covered by tests built on Microsoft's documented v1.0 response shapes; the suite and the installed demo pass on Python 3.9 and 3.14. The live collector follows the documented endpoints but has not yet been exercised across a broad range of production tenants. If you run it on yours, an issue with a `--redact`ed report, or just a note that it worked, is the most useful contribution you can make.
 
 ## Development
 
