@@ -1,0 +1,45 @@
+# Post-merge smoke on Depot CI (Workspace ADR-0020 and ADR-0021).
+# One small sandbox per landing on main; docs-only commits start nothing.
+# Tests run on the oldest and newest supported Python in one job.
+#
+#   on demand : depot ci run --workflow .depot/workflows/ci.yml
+#   local     : script/cibuild
+name: ci
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "tests/**"
+      - "scripts/make_demo.py"
+      - "script/**"
+      - "pyproject.toml"
+      - ".depot/workflows/ci.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-main
+  cancel-in-progress: true
+
+jobs:
+  smoke:
+    name: smoke
+    runs-on: depot-ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: |
+            3.9
+            3.13
+      - name: Python 3.9
+        run: PYTHON=python3.9 script/cibuild
+      - name: Python 3.13
+        run: PYTHON=python3.13 script/cibuild

@@ -1,0 +1,16 @@
+#!/bin/sh
+# The whole CI gate, runnable anywhere: install into a throwaway venv, run the
+# tests, then run the installed demo from outside the source tree.
+set -eu
+PY="${PYTHON:-python3}"
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+WORK="$(mktemp -d)"
+trap 'rm -rf -- "$WORK"' EXIT
+"$PY" -m venv "$WORK/venv"
+"$WORK/venv/bin/python" -m pip install --quiet --disable-pip-version-check "$ROOT"
+"$WORK/venv/bin/python" --version
+(cd "$ROOT" && PYTHONPATH=tests "$WORK/venv/bin/python" -m unittest discover -s tests)
+cd "$WORK"
+"$WORK/venv/bin/intune-why" demo --no-open --html report.html
+grep -q '"source": "demo"' report.html
+echo "cibuild: ok"

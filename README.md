@@ -87,10 +87,11 @@ Version 0.1. The analysis, report and Graph client are covered by tests built on
 ## Development
 
 ```sh
-python -m pip install -e .
-PYTHONPATH=tests python -m unittest discover -s tests
+script/cibuild                           # the full CI gate: install, test, run the installed demo
 python scripts/make_demo.py              # regenerate the fictional tenant
 python scripts/shadow_jev.py out.jsonl   # re-measure Jev (needs TYPESAFE_API_KEY)
 ```
+
+CI runs `script/cibuild` on [Depot CI](https://depot.dev) for every code change that lands on `main`, on Python 3.9 and 3.13.
 
 MIT licensed.
