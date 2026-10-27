@@ -15,5 +15,5 @@ cd "$WORK"
 grep -q '"source": "demo"' report.html
 # The browser demo must produce the same report as the package.
 "$WORK/venv/bin/intune-why" demo --no-open --json --html report.html 2>/dev/null > py-report.json
-PY_REPORT="$WORK/py-report.json" node --test "$ROOT/web/"
+PY_REPORT="$WORK/py-report.json" node --test "$ROOT/web/parity.test.mjs"
 echo "cibuild: ok"
