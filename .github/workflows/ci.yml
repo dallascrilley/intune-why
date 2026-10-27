@@ -19,4 +19,8 @@ jobs:
       - run: python -m unittest discover -s tests
         env:
           PYTHONPATH: tests
-      - run: intune-why demo --no-open --html report.html && grep -q '"source": "demo"' report.html
+      - name: Demo from the installed command
+        run: |
+          cd "$RUNNER_TEMP"
+          intune-why demo --no-open --html report.html
+          grep -q '"source": "demo"' report.html
